@@ -37,6 +37,7 @@ export interface CareerItem {
   institution: string;
   date: string;
   description: string;
+  tags?: string[];
 }
 
 const findImage = (id: string) => PlaceHolderImages.find(img => img.id === id) || { imageUrl: '', imageHint: '' };
@@ -159,35 +160,40 @@ export const careerPath: CareerItem[] = [
     title: 'Senior Pipeline TD',
     institution: 'DreamWorks Animation',
     date: '2020 - Present',
-    description: 'Developed and maintained core pipeline tools for feature animation. Specialized in asset management, render farm optimization, and developing artist-facing tools for Maya and Houdini.'
+    description: 'Developed and maintained core pipeline tools for feature animation. Specialized in asset management, render farm optimization, and developing artist-facing tools for Maya and Houdini.',
+    tags: ['Python', 'Maya', 'Houdini', 'ShotGrid API', 'USD']
   },
   {
     type: 'Work',
     title: 'Tools & Pipeline Developer',
     institution: 'Ubisoft',
     date: '2016 - 2020',
-    description: 'Worked on the "Assassin\'s Creed" franchise. Created procedural world-building tools, automated character and environment art pipelines, and provided direct support to the art team.'
+    description: 'Worked on the "Assassin\'s Creed" franchise. Created procedural world-building tools, automated character and environment art pipelines, and provided direct support to the art team.',
+    tags: ['Python', 'C#', 'Anvil Engine', '3ds Max']
   },
   {
     type: 'Education',
     title: 'M.S. in Computer Graphics',
     institution: 'Stanford University',
     date: '2014 - 2016',
-    description: 'Focused on real-time rendering, physics simulation, and geometry processing. Thesis project involved developing a novel technique for procedural character animation.'
+    description: 'Focused on real-time rendering, physics simulation, and geometry processing. Thesis project involved developing a novel technique for procedural character animation.',
+    tags: ['C++', 'OpenGL', 'Physics Simulation']
   },
   {
     type: 'Work',
     title: 'Junior Technical Artist',
     institution: 'BioWare',
     date: '2012 - 2014',
-    description: 'Assisted in rigging, scripting, and shader development for "Mass Effect 3". Wrote Mel and Python scripts to automate repetitive tasks for animators and character artists.'
+    description: 'Assisted in rigging, scripting, and shader development for "Mass Effect 3". Wrote Mel and Python scripts to automate repetitive tasks for animators and character artists.',
+    tags: ['MEL', 'Python', 'Unreal Engine 3', 'HLSL']
   },
   {
     type: 'Education',
     title: 'B.S. in Computer Science',
     institution: 'University of Waterloo',
     date: '2008 - 2012',
-    description: 'Graduated with honors. Specialized in software engineering and human-computer interaction. Completed co-op terms at several game development studios.'
+    description: 'Graduated with honors. Specialized in software engineering and human-computer interaction. Completed co-op terms at several game development studios.',
+    tags: ['Java', 'C++', 'Data Structures']
   },
 ];
 
