@@ -1,3 +1,4 @@
+
 import type {Config} from 'tailwindcss';
 
 export default {
@@ -96,12 +97,17 @@ export default {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0' },
         },
+        'typing': {
+          'from': { width: '0' },
+          'to': { width: '100%' }
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'grid': 'grid 15s linear infinite',
         'blink': 'blink 1s step-end infinite',
+        'typing': 'typing 2s steps(40, end), blink .75s step-end infinite',
       },
     },
   },
