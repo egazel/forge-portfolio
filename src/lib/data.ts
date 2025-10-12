@@ -22,7 +22,7 @@ export interface BlogPost {
   content: string;
 }
 
-export interface Recommendation {
+export interface Reference {
   name: string;
   title: string;
   company: string;
@@ -118,7 +118,7 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
-export const recommendations: Recommendation[] = [
+export const references: Reference[] = [
   {
     name: 'Jane Doe',
     title: 'Lead Animator',
