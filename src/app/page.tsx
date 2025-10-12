@@ -31,7 +31,7 @@ export default function Home() {
               )}
             </div>
             <div className="md:col-span-2 prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground text-center md:text-left">
-              <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 whitespace-nowrap uppercase">
+              <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 whitespace-nowrap uppercase">
                 Hello, I'm Elie Gazel
               </h1>
               <p>
