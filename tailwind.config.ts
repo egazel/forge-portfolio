@@ -107,7 +107,7 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'grid': 'grid 15s linear infinite',
         'blink': 'blink 1s step-end infinite',
-        'typing': 'typing 2s steps(40, end), blink .75s step-end infinite',
+        'typing': 'typing 2s steps(40, end)',
       },
     },
   },
