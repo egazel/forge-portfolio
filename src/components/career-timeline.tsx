@@ -13,7 +13,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
       <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
       
       {items.map((item, index) => (
-        <div key={index} className="relative mb-4 flex w-full items-center justify-center">
+        <div key={index} className="relative flex w-full items-center justify-center">
           
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-background flex items-center justify-center w-12 h-12 rounded-full border-2 border-primary">
             {item.type === 'Work' ? <Briefcase className="h-6 w-6 text-primary" /> : <GraduationCap className="h-6 w-6 text-primary" />}
@@ -23,7 +23,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
             // Card on the left
             <>
               <div className="w-1/2 pr-8 flex justify-end">
-                <Card className="w-full max-w-md">
+                <Card className="w-full max-w-md mb-4">
                   <CardHeader>
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
@@ -48,7 +48,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
             <>
               <div className="w-1/2"></div>
               <div className="w-1/2 pl-8 flex justify-start">
-                 <Card className="w-full max-w-md">
+                 <Card className="w-full max-w-md mb-4">
                   <CardHeader>
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
