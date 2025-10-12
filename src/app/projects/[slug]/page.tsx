@@ -46,8 +46,8 @@ export default function ProjectDetailPage({ params }: { params: { slug:string } 
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-        <div className="lg:col-span-3 space-y-8">
-          <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg shadow-black/20">
+        <div className="lg:col-span-3">
+          <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg shadow-black/20">
             <Image
               src={project.imageUrl}
               alt={project.title}
@@ -58,15 +58,8 @@ export default function ProjectDetailPage({ params }: { params: { slug:string } 
               priority
             />
           </div>
-          <div className="space-y-6">
-            <h2 className="font-headline text-2xl font-bold uppercase">About the Project</h2>
-            <div
-              className="prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground"
-              dangerouslySetInnerHTML={{ __html: project.longDescription }}
-            />
-          </div>
         </div>
-        <div className="lg:col-span-2 space-y-6">
+        <div className="lg:col-span-2 space-y-8">
           <Card>
             <CardHeader>
               <CardTitle className="font-headline text-2xl uppercase">Technologies Used</CardTitle>
@@ -79,6 +72,15 @@ export default function ProjectDetailPage({ params }: { params: { slug:string } 
               </div>
             </CardContent>
           </Card>
+          
+          <div className="space-y-6">
+            <h2 className="font-headline text-2xl font-bold uppercase">About the Project</h2>
+            <div
+              className="prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground"
+              dangerouslySetInnerHTML={{ __html: project.longDescription }}
+            />
+          </div>
+
           {project.modelUrl && (
             <Card>
               <CardHeader>
