@@ -56,20 +56,20 @@ export default function ProjectDetailPage({ params }: { params: { slug:string } 
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-        <div className="lg:col-span-3">
-          <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg shadow-black/20">
+        <div className="lg:col-span-2">
+          <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg shadow-black/20">
             <Image
               src={project.imageUrl}
               alt={project.title}
               fill
-              sizes="(max-width: 1024px) 100vw, 60vw"
+              sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-cover"
               data-ai-hint={project.imageHint}
               priority
             />
           </div>
         </div>
-        <div className="lg:col-span-2 space-y-8">
+        <div className="lg:col-span-3 space-y-8">
           <Card>
             <CardHeader>
               <CardTitle className="font-headline text-2xl uppercase">Technologies Used</CardTitle>
