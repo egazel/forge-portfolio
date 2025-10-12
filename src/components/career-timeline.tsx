@@ -22,8 +22,8 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
           {index % 2 === 0 ? (
             // Card on the left
             <>
-              <div className="w-1/2 pr-8 flex justify-end">
-                <Card className="w-full max-w-md mb-4">
+              <div className="w-1/2 pr-8 flex justify-end py-4">
+                <Card className="w-full max-w-md">
                   <CardHeader>
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
@@ -47,8 +47,8 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
             // Card on the right
             <>
               <div className="w-1/2"></div>
-              <div className="w-1/2 pl-8 flex justify-start">
-                 <Card className="w-full max-w-md mb-4">
+              <div className="w-1/2 pl-8 flex justify-start py-4">
+                 <Card className="w-full max-w-md">
                   <CardHeader>
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
