@@ -1,3 +1,5 @@
+'use client';
+
 import type { Project } from "@/lib/data";
 import ProjectCard from "./project-card";
 import { motion } from "framer-motion";
