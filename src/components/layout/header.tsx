@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
+import { ThemeToggle } from "../theme-toggle";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -52,36 +53,39 @@ const Header = () => {
             <NavLink key={item.href} {...item} />
           ))}
         </nav>
-        <div className="md:hidden">
-          <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left">
-              <div className="flex flex-col h-full">
-                <div className="flex items-center justify-between p-4 border-b">
-                  <Link href="/" className="flex items-center gap-2 font-bold font-headline text-lg">
-                    <Cpu className="text-primary h-7 w-7" />
-                    Synapse
-                  </Link>
-                  <SheetTrigger asChild>
-                    <Button variant="ghost" size="icon">
-                      <X />
-                      <span className="sr-only">Close menu</span>
-                    </Button>
-                  </SheetTrigger>
+        <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <div className="md:hidden">
+            <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                    <Menu />
+                    <span className="sr-only">Open menu</span>
+                </Button>
+                </SheetTrigger>
+                <SheetContent side="left">
+                <div className="flex flex-col h-full">
+                    <div className="flex items-center justify-between p-4 border-b">
+                    <Link href="/" className="flex items-center gap-2 font-bold font-headline text-lg">
+                        <Cpu className="text-primary h-7 w-7" />
+                        Synapse
+                    </Link>
+                    <SheetTrigger asChild>
+                        <Button variant="ghost" size="icon">
+                        <X />
+                        <span className="sr-only">Close menu</span>
+                        </Button>
+                    </SheetTrigger>
+                    </div>
+                    <nav className="flex-grow p-4 space-y-2">
+                    {navItems.map((item) => (
+                        <NavLink key={item.href} {...item} isMobile />
+                    ))}
+                    </nav>
                 </div>
-                <nav className="flex-grow p-4 space-y-2">
-                  {navItems.map((item) => (
-                    <NavLink key={item.href} {...item} isMobile />
-                  ))}
-                </nav>
-              </div>
-            </SheetContent>
-          </Sheet>
+                </SheetContent>
+            </Sheet>
+            </div>
         </div>
       </div>
     </header>
