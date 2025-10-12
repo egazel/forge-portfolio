@@ -56,12 +56,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-20 md:mb-32">
-        <h2 className="font-headline text-3xl md:text-4xl font-bold mb-12 text-center uppercase">
-          Core Competencies
-        </h2>
-        <Skills />
-      </section>
       
     </div>
   );
