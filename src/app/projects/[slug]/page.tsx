@@ -3,11 +3,10 @@ import Image from "next/image";
 import { getProjectBySlug, projects } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import ThreeViewer from "@/components/three-viewer";
 import type { Metadata } from 'next';
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Github } from "lucide-react";
 
 type Props = {
   params: { slug: string };
@@ -74,12 +73,20 @@ export default function ProjectDetailPage({ params }: { params: { slug:string } 
             <CardHeader>
               <CardTitle className="font-headline text-2xl uppercase">Technologies Used</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col gap-4">
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
                   <Badge key={tech} variant="default">{tech}</Badge>
                 ))}
               </div>
+              {project.repoUrl && (
+                <Button asChild variant="outline">
+                  <Link href={project.repoUrl} target="_blank">
+                    <Github />
+                    View on GitHub
+                  </Link>
+                </Button>
+              )}
             </CardContent>
           </Card>
           

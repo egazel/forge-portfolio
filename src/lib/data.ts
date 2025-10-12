@@ -10,6 +10,7 @@ export interface Project {
   technologies: string[];
   longDescription: string;
   modelUrl?: string;
+  repoUrl?: string;
 }
 
 export interface Reference {
@@ -43,6 +44,7 @@ export const projects: Project[] = [
     technologies: ['Houdini', 'VEX', 'Python', 'SideFX Labs'],
     longDescription: `<p>The Houdini Terrain Generator is a comprehensive toolset designed to streamline the creation of realistic terrains within SideFX Houdini. Leveraging the power of proceduralism, it allows for non-destructive workflows, giving artists immense creative freedom.</p><p>Key features include multi-layered noise functions, erosion simulation based on hydraulic and thermal principles, and intelligent scattering of foliage and rocks based on slope and altitude. The tool was developed using a combination of VEX for performance-critical operations and Python for user interface and pipeline integration.</p>`,
     modelUrl: '/models/terrain.glb',
+    repoUrl: 'https://github.com/example/houdini-terrain-generator'
   },
   {
     slug: 'maya-auto-rigger',
@@ -53,6 +55,7 @@ export const projects: Project[] = [
     imageHint: findImage('project-hero-2').imageHint,
     technologies: ['Maya', 'Python', 'PyMEL', 'Qt'],
     longDescription: `<p>This auto-rigger for Autodesk Maya was created to drastically reduce the time spent on character rigging. By analyzing a character's mesh and a set of user-placed guides, the tool automatically generates a full production-ready rig.</p><p>Features include IK/FK switching, stretchy limbs, spine controls, and a custom picker UI built with PySide2/Qt. The entire system is modular, allowing for easy extension to support different types of creatures or props. It has been used in several short film productions, increasing artist efficiency by over 300%.</p>`,
+    repoUrl: 'https://github.com/example/maya-auto-rigger'
   },
   {
     slug: 'asset-management-pipeline',
@@ -63,6 +66,7 @@ export const projects: Project[] = [
     imageHint: findImage('project-hero-3').imageHint,
     technologies: ['Python', 'ShotGrid (Shotgun) API', 'PostgreSQL', 'Docker'],
     longDescription: `<p>Developed a full-featured asset management pipeline to handle the lifecycle of 3D assets from creation to final render. The system integrates seamlessly with major DCCs like Maya, Houdini, and Substance Painter.</p><p>It provides artists with a simple interface to publish, version, and import assets, while providing production managers with a dashboard to track progress and status. The backend is powered by a PostgreSQL database and utilizes the ShotGrid API for robust production tracking. The entire infrastructure is containerized with Docker for easy deployment and scalability.</p>`,
+    repoUrl: 'https://github.com/example/asset-management-pipeline'
   },
   {
     slug: 'unreal-engine-procedural-foliage',
@@ -73,6 +77,7 @@ export const projects: Project[] = [
     imageHint: 'unreal engine forest',
     technologies: ['Unreal Engine 5', 'Blueprints', 'C++'],
     longDescription: `<p>This tool for Unreal Engine 5 allows level designers to quickly populate large environments with procedurally placed foliage, rocks, and other assets based on landscape layers and physical rules.</p>`,
+    repoUrl: 'https://github.com/example/unreal-procedural-foliage'
   },
   {
     slug: 'unity-inventory-system',
@@ -83,6 +88,7 @@ export const projects: Project[] = [
     imageHint: 'video game inventory',
     technologies: ['Unity', 'C#', 'ScriptableObjects'],
     longDescription: `<p>A complete inventory and crafting system for Unity games. It uses ScriptableObjects to define items, recipes, and inventory configurations, making it highly extensible and easy for designers to use.</p>`,
+    repoUrl: 'https://github.com/example/unity-inventory-system'
   },
   {
     slug: 'web-based-3d-model-viewer',
@@ -93,6 +99,7 @@ export const projects: Project[] = [
     imageHint: '3d web viewer',
     technologies: ['React', 'Three.js', 'Next.js', 'TypeScript'],
     longDescription: `<p>An interactive 3D model viewer built with Three.js and React. It allows users to upload, view, and interact with 3D models directly in their browser. Supports PBR materials, animations, and environment lighting.</p>`,
+    repoUrl: 'https://github.com/example/web-3d-model-viewer'
   }
 ];
 
