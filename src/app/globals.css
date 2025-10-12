@@ -5,25 +5,25 @@
 
 @layer base {
   :root {
-    --background: 240 10% 98%; /* Lighter gray for background */
+    --background: 240 10% 98%; /* Off-white background */
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
+    --primary: 221.2 83.2% 53.3%; /* Blue */
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 277 82% 96%; /* Light purple for accent background */
-    --accent-foreground: 277 82% 30%; /* Darker purple for accent text */
+    --accent: 210 40% 96.1%; /* Adjusted accent to complement blue */
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 277 82% 69%;
+    --ring: 221.2 83.2% 53.3%; /* Ring color to match blue primary */
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -39,19 +39,19 @@
     --card-foreground: 0 0% 98%;
     --popover: 240 4% 10%;
     --popover-foreground: 0 0% 98%;
-    --primary: 231 48% 48%; /* #3F51B5 */
+    --primary: 221.2 83.2% 53.3%; /* Blue */
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4% 18%; /* Darker secondary for contrast */
     --secondary-foreground: 0 0% 98%;
     --muted: 240 4% 18%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 277 82% 69%; /* #BE71F0 */
-    --accent-foreground: 0 0% 13%;
+    --accent: 240 4% 18%; /* Adjusted accent for dark mode */
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 4% 20%;
     --input: 240 4% 20%;
-    --ring: 277 82% 69%;
+    --ring: 221.2 83.2% 53.3%; /* Ring color to match blue primary */
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
