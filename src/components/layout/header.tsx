@@ -14,7 +14,6 @@ const navItems = [
   { href: "/projects", label: "Projects" },
   { href: "/blog", label: "Blog" },
   { href: "/curator", label: "AI Curator" },
-  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 
