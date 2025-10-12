@@ -8,7 +8,6 @@ const skills = [
   { name: 'C++', icon: <CppIcon className="h-12 w-12" /> },
   { name: '3ds Max', icon: <ThreeDsMaxIcon className="h-12 w-12" /> },
   { name: 'MaxScript', icon: <MaxscriptIcon className="h-12 w-12" /> },
-  { name: 'Tools & Pipeline', icon: <Workflow className="h-12 w-12" /> },
 ];
 
 const Skills = () => {
