@@ -6,7 +6,6 @@ import ProjectGrid from "@/components/project-grid";
 import { projects } from "@/lib/data";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { AnimatedGridBackground } from "@/components/animated-grid-background";
 
 const profileImage = PlaceHolderImages.find(img => img.id === 'about-profile');
 
@@ -14,7 +13,7 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-12 md:py-20">
       <section className="mb-20 md:mb-32">
-        <AnimatedGridBackground />
+        
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
             <div className="md:col-span-1 flex justify-center">
