@@ -7,6 +7,7 @@ import Footer from '@/components/layout/footer';
 import { AnimatedGridBackground } from '@/components/animated-grid-background';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Inter, Space_Grotesk } from 'next/font/google';
+import ScrollToTop from '@/components/scroll-to-top';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -43,6 +44,7 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
           <Toaster />
+          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
