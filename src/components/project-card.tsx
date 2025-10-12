@@ -4,15 +4,27 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { Project } from "@/lib/data";
 import { ArrowUpRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface ProjectCardProps {
   project: Project;
+  activeCategory?: string;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project, activeCategory }: ProjectCardProps) => {
+  const isActive = !activeCategory || project.category === activeCategory;
+
   return (
     <Link href={`/projects/${project.slug}`} className="group block">
-      <Card className="h-full overflow-hidden transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 border-transparent hover:border-primary/50 bg-card">
+      <Card 
+        className={cn(
+          "h-full overflow-hidden transition-all duration-300 ease-in-out",
+          "bg-card",
+          isActive 
+            ? "opacity-100 scale-100 shadow-lg shadow-primary/20 border-primary/50" 
+            : "opacity-40 scale-95 hover:opacity-100 hover:scale-100 hover:shadow-lg hover:shadow-primary/20"
+        )}
+      >
         <div className="relative h-48 w-full overflow-hidden">
           <Image
             src={project.imageUrl}
