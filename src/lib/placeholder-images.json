@@ -41,6 +41,24 @@
       "description": "Thumbnail for a 3D model viewer.",
       "imageUrl": "https://picsum.photos/seed/3dthumb/800/450",
       "imageHint": "3d model"
+    },
+    {
+      "id": "rec-profile-1",
+      "description": "Profile picture for a recommendation.",
+      "imageUrl": "https://picsum.photos/seed/rec1/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "rec-profile-2",
+      "description": "Profile picture for a recommendation.",
+      "imageUrl": "https://picsum.photos/seed/rec2/100/100",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "rec-profile-3",
+      "description": "Profile picture for a recommendation.",
+      "imageUrl": "https://picsum.photos/seed/rec3/100/100",
+      "imageHint": "man portrait"
     }
   ]
 }

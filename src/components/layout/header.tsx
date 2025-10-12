@@ -13,6 +13,7 @@ import { ThemeToggle } from "../theme-toggle";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
+  { href: "/recommendations", label: "Recommendations" },
   { href: "/blog", label: "Blog" },
   { href: "/curator", label: "AI Curator" },
   { href: "/contact", label: "Contact" },

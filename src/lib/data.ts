@@ -22,6 +22,15 @@ export interface BlogPost {
   content: string;
 }
 
+export interface Recommendation {
+  name: string;
+  title: string;
+  company: string;
+  quote: string;
+  imageUrl: string;
+  imageHint: string;
+}
+
 const findImage = (id: string) => PlaceHolderImages.find(img => img.id === id) || { imageUrl: '', imageHint: '' };
 
 export const projects: Project[] = [
@@ -107,6 +116,33 @@ export const blogPosts: BlogPost[] = [
     imageHint: findImage('blog-thumb-2').imageHint,
     content: `<p>Machine learning is rapidly moving from a theoretical concept to a practical tool in the arsenal of pipeline developers. This article covers several exciting applications of ML in modern production environments.</p><h3>Practical Applications</h3><ul><li><strong>Predictive Analytics:</strong> Using historical render data to predict render times and resource allocation.</li><li><strong>Intelligent Content Creation:</strong> Automating tasks like UV unwrapping, weight painting, and even generating procedural textures based on concept art.</li><li><strong>Smart Asset Management:</strong> As demonstrated by the Curator tool on this site, AI can automatically analyze and tag assets, making them easier to find and manage.</li></ul><p>We are just scratching the surface of what's possible, and the future for AI-assisted content creation is incredibly bright.</p>`,
   },
+];
+
+export const recommendations: Recommendation[] = [
+  {
+    name: 'Jane Doe',
+    title: 'Lead Animator',
+    company: 'Pixel Perfect Studios',
+    quote: "The auto-rigging tool developed by Synapse is a masterpiece. It cut our character setup time by more than 50%, allowing our animation team to focus on what they do best: bringing characters to life. It's robust, intuitive, and has become an indispensable part of our pipeline.",
+    imageUrl: findImage('rec-profile-1').imageUrl,
+    imageHint: findImage('rec-profile-1').imageHint,
+  },
+  {
+    name: 'John Smith',
+    title: 'VFX Supervisor',
+    company: 'Epic Effects',
+    quote: "Working with the procedural terrain generator was a game-changer for our open-world project. The level of detail and control it provided was astounding. We could iterate on massive landscapes in hours, not weeks. A truly powerful and well-designed tool.",
+    imageUrl: findImage('rec-profile-2').imageUrl,
+    imageHint: findImage('rec-profile-2').imageHint,
+  },
+  {
+    name: 'Emily White',
+    title: 'Production Manager',
+    company: 'Creative Assembly',
+    quote: "The asset management system is the backbone of our studio. Its seamless integration with our existing software and the clarity it provides on asset status and versioning have been invaluable. It has streamlined communication between departments and eliminated countless hours of manual tracking.",
+    imageUrl: findImage('rec-profile-3').imageUrl,
+    imageHint: findImage('rec-profile-3').imageHint,
+  }
 ];
 
 export const getProjectBySlug = (slug: string) => projects.find(p => p.slug === slug);
