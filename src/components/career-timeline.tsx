@@ -1,7 +1,7 @@
 import type { CareerItem } from "@/lib/data";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, ChevronDown, GraduationCap } from "lucide-react";
+import { Briefcase, ChevronUp, GraduationCap } from "lucide-react";
 
 interface CareerTimelineProps {
   items: CareerItem[];
@@ -12,7 +12,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
     <div className="relative">
       <div className="absolute left-1/2 top-0 h-full w-0.5 bg-primary -translate-x-1/2"></div>
        <div className="absolute left-1/2 -top-2 -translate-x-1/2 z-10 bg-background p-0.5">
-          <ChevronDown className="h-5 w-5 text-primary" />
+          <ChevronUp className="h-5 w-5 text-primary" />
        </div>
       
       {items.map((item, index) => (
@@ -25,8 +25,8 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
           {index % 2 === 0 ? (
             // Card on the left
             <>
-              <div className="w-1/2 pr-8 flex justify-end py-4">
-                <Card className="w-full max-w-md">
+              <div className="w-1/2 pr-8 flex justify-end py-0">
+                <Card className="w-full max-w-md my-2">
                   <CardHeader className="py-4">
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
@@ -50,8 +50,8 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
             // Card on the right
             <>
               <div className="w-1/2"></div>
-              <div className="w-1/2 pl-8 flex justify-start py-4">
-                 <Card className="w-full max-w-md">
+              <div className="w-1/2 pl-8 flex justify-start py-0">
+                 <Card className="w-full max-w-md my-2">
                   <CardHeader className="py-4">
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
@@ -64,7 +64,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                     <CardFooter className="flex flex-wrap gap-2 pt-4 pb-4 px-6">
                       {item.tags.map(tag => (
                         <Badge key={tag} variant="secondary">{tag}</Badge>
-))}
+                      ))}
                     </CardFooter>
                   )}
                 </Card>
