@@ -18,7 +18,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
             <div className="md:col-span-1 flex justify-center">
               {profileImage && (
-                <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg shadow-primary/20">
+                <div className="relative w-48 h-64 md:w-64 md:h-80 rounded-lg overflow-hidden shadow-lg shadow-primary/20">
                   <Image
                     src={profileImage.imageUrl}
                     alt="Profile picture"
