@@ -31,7 +31,7 @@ const Header = () => {
         className={cn(
           "px-3 py-2 rounded-md text-sm font-medium transition-colors",
           isActive
-            ? "bg-primary text-primary-foreground"
+            ? "bg-primary/10 text-primary"
             : "text-muted-foreground hover:text-foreground",
           isMobile && "block w-full text-left text-base"
         )}
