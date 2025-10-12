@@ -2,10 +2,9 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
-import ProjectGrid from "@/components/project-grid";
-import { projects } from "@/lib/data";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import Skills from "@/components/skills";
 
 const profileImage = PlaceHolderImages.find(img => img.id === 'about-profile');
 
@@ -58,10 +57,10 @@ export default function Home() {
       </section>
 
       <section className="mb-20 md:mb-32">
-        <h2 className="font-headline text-3xl md:text-4xl font-bold mb-8 text-center uppercase">
-          Featured Work
+        <h2 className="font-headline text-3xl md:text-4xl font-bold mb-12 text-center uppercase">
+          Core Competencies
         </h2>
-        <ProjectGrid projects={projects.slice(0, 3)} />
+        <Skills />
       </section>
       
     </div>
