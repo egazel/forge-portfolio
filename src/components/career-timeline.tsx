@@ -1,7 +1,7 @@
 import type { CareerItem } from "@/lib/data";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, ChevronDown, GraduationCap } from "lucide-react";
 
 interface CareerTimelineProps {
   items: CareerItem[];
@@ -11,6 +11,9 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
   return (
     <div className="relative">
       <div className="absolute left-1/2 top-0 h-full w-0.5 bg-primary -translate-x-1/2"></div>
+       <div className="absolute left-1/2 -top-2 -translate-x-1/2 z-10 bg-background p-0.5">
+          <ChevronDown className="h-5 w-5 text-primary" />
+       </div>
       
       {items.map((item, index) => (
         <div key={index} className="relative flex w-full items-center justify-center">
@@ -61,7 +64,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                     <CardFooter className="flex flex-wrap gap-2 pt-4 pb-4 px-6">
                       {item.tags.map(tag => (
                         <Badge key={tag} variant="secondary">{tag}</Badge>
-                      ))}
+))}
                     </CardFooter>
                   )}
                 </Card>
