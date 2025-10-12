@@ -46,7 +46,9 @@ const ProjectCard = ({ project, activeCategory }: ProjectCardProps) => {
             <CardTitle className="font-headline text-xl mb-1 group-hover:text-primary transition-colors">
               {project.title}
             </CardTitle>
-            <Badge variant="secondary">{project.category}</Badge>
+            <div className="flex">
+                <Badge variant="secondary">{project.category}</Badge>
+            </div>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground text-sm">{project.description}</p>
