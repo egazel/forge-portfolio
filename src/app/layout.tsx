@@ -6,6 +6,18 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { AnimatedGridBackground } from '@/components/animated-grid-background';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Inter, Space_Grotesk } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+});
+
 
 export const metadata: Metadata = {
   title: 'Synapse Portfolio | Tools & Pipeline Developer',
@@ -19,12 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
-      </head>
-      <body className={cn("font-body antialiased min-h-screen flex flex-col relative")}>
+      <body className={cn("font-body antialiased min-h-screen flex flex-col relative", inter.variable, spaceGrotesk.variable)}>
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
