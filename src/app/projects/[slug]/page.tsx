@@ -31,7 +31,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectDetailPage({ params }: { params: { slug: string } }) {
+export default function ProjectDetailPage({ params }: { params: { slug:string } }) {
   const project = getProjectBySlug(params.slug);
 
   if (!project) {
@@ -45,27 +45,28 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
         <p className="text-xl text-muted-foreground">{project.category}</p>
       </div>
 
-      <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-12 shadow-lg shadow-black/20">
-        <Image
-          src={project.imageUrl}
-          alt={project.title}
-          fill
-          sizes="100vw"
-          className="object-cover"
-          data-ai-hint={project.imageHint}
-          priority
-        />
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <div className="lg:col-span-2 space-y-6">
-          <h2 className="font-headline text-2xl font-bold uppercase">About the Project</h2>
-          <div
-            className="prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground"
-            dangerouslySetInnerHTML={{ __html: project.longDescription }}
-          />
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+        <div className="lg:col-span-3 space-y-8">
+          <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg shadow-black/20">
+            <Image
+              src={project.imageUrl}
+              alt={project.title}
+              fill
+              sizes="(max-width: 1024px) 100vw, 60vw"
+              className="object-cover"
+              data-ai-hint={project.imageHint}
+              priority
+            />
+          </div>
+          <div className="space-y-6">
+            <h2 className="font-headline text-2xl font-bold uppercase">About the Project</h2>
+            <div
+              className="prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground"
+              dangerouslySetInnerHTML={{ __html: project.longDescription }}
+            />
+          </div>
         </div>
-        <div className="space-y-6">
+        <div className="lg:col-span-2 space-y-6">
           <Card>
             <CardHeader>
               <CardTitle className="font-headline text-2xl uppercase">Technologies Used</CardTitle>
