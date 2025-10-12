@@ -6,8 +6,6 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Skills from "@/components/skills";
 
-const profileImage = PlaceHolderImages.find(img => img.id === 'about-profile');
-
 export default function Home() {
   return (
     <div className="container mx-auto px-4 flex-grow flex items-center justify-center">
@@ -16,18 +14,16 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
             <div className="md:col-span-1 flex justify-center">
-              {profileImage && (
                 <div className="relative w-48 h-64 md:w-64 md:h-80 rounded-lg overflow-hidden shadow-lg shadow-primary/30">
                   <Image
-                    src={profileImage.imageUrl}
+                    src="/profile.jpg"
                     alt="Profile picture"
                     fill
                     sizes="(max-width: 768px) 33vw, 256px"
                     className="object-cover"
-                    data-ai-hint={profileImage.imageHint}
+                    data-ai-hint="person portrait"
                   />
                 </div>
-              )}
             </div>
             <div className="md:col-span-2 prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground text-center md:text-left">
               <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 whitespace-nowrap uppercase">
