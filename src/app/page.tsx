@@ -10,8 +10,8 @@ const profileImage = PlaceHolderImages.find(img => img.id === 'about-profile');
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4 py-12 md:py-20">
-      <section className="mb-20 md:mb-32">
+    <div className="container mx-auto px-4 flex-grow flex items-center justify-center">
+      <section>
         
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
