@@ -1,5 +1,6 @@
 import type { Project } from "@/lib/data";
 import ProjectCard from "./project-card";
+import { motion } from "framer-motion";
 
 interface ProjectGridProps {
   projects: Project[];
@@ -14,18 +15,15 @@ const ProjectGrid = ({ projects, activeCategory }: ProjectGridProps) => {
       if (aIsActive && !bIsActive) return -1;
       if (!aIsActive && bIsActive) return 1;
     }
-    // A stable sort is not required here, but we can return 0
-    // to indicate that the original order should be preserved for items
-    // that are both active or both inactive.
     return 0;
   });
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {sortedProjects.map((project) => (
         <ProjectCard key={project.slug} project={project} activeCategory={activeCategory} />
       ))}
-    </div>
+    </motion.div>
   );
 };
 
