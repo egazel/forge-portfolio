@@ -10,7 +10,7 @@ interface CareerTimelineProps {
 const CareerTimeline = ({ items }: CareerTimelineProps) => {
   return (
     <div className="relative">
-      <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
+      <div className="absolute left-1/2 top-0 h-full w-0.5 bg-primary -translate-x-1/2"></div>
       
       {items.map((item, index) => (
         <div key={index} className="relative flex w-full items-center justify-center">
