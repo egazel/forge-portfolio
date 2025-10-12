@@ -22,19 +22,22 @@ export default function ProjectsPage() {
         </p>
       </div>
 
-      <Tabs
-        defaultValue={activeCategory}
-        onValueChange={setActiveCategory}
-        className="w-full"
-      >
-        <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-12">
-          {categories.map(category => (
-            <TabsTrigger key={category} value={category}>
-              {category}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-      </Tabs>
+      <div className="flex justify-center mb-12">
+        <Tabs
+          defaultValue={activeCategory}
+          onValueChange={setActiveCategory}
+          className="w-auto"
+        >
+          <TabsList className="bg-card border p-1.5 rounded-full">
+            {categories.map(category => (
+              <TabsTrigger key={category} value={category} className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                {category}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </Tabs>
+      </div>
+
 
       <ProjectGrid projects={projects} activeCategory={activeCategory} />
     </div>
