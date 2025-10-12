@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
@@ -41,7 +42,7 @@ export default function RootLayout({
         >
           <AnimatedGridBackground />
           <Header />
-          <main className="flex-grow flex flex-col">{children}</main>
+          <main className="flex-grow flex flex-col mt-12">{children}</main>
           <Footer />
           <Toaster />
           <ScrollToTop />
