@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-hero-1",
+      "description": "Abstract visualization of a complex node graph.",
+      "imageUrl": "https://picsum.photos/seed/proj1/800/450",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "project-hero-2",
+      "description": "Futuristic user interface for a software tool.",
+      "imageUrl": "https://picsum.photos/seed/proj2/800/450",
+      "imageHint": "futuristic interface"
+    },
+    {
+      "id": "project-hero-3",
+      "description": "3D render of a mechanical rig.",
+      "imageUrl": "https://picsum.photos/seed/proj3/800/450",
+      "imageHint": "3d mechanical"
+    },
+    {
+      "id": "blog-thumb-1",
+      "description": "Close up on lines of code on a dark screen.",
+      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageHint": "code screen"
+    },
+    {
+      "id": "blog-thumb-2",
+      "description": "A person sketching ideas on a whiteboard.",
+      "imageUrl": "https://picsum.photos/seed/blog2/600/400",
+      "imageHint": "whiteboard sketch"
+    },
+    {
+      "id": "about-profile",
+      "description": "Profile picture of the developer.",
+      "imageUrl": "https://picsum.photos/seed/profile/400/400",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "model-viewer-thumb",
+      "description": "Thumbnail for a 3D model viewer.",
+      "imageUrl": "https://picsum.photos/seed/3dthumb/800/450",
+      "imageHint": "3d model"
+    }
+  ]
 }
