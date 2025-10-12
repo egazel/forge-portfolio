@@ -10,7 +10,7 @@ export function AnimatedGridBackground({
   return (
     <div
       className={cn(
-        "pointer-events-none fixed inset-0 top-0 left-0 -z-10 h-full w-full bg-background",
+        "pointer-events-none absolute inset-0 z-[-1] h-full w-full bg-background",
         className
       )}
     >
