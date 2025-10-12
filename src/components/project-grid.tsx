@@ -14,6 +14,9 @@ const ProjectGrid = ({ projects, activeCategory }: ProjectGridProps) => {
       if (aIsActive && !bIsActive) return -1;
       if (!aIsActive && bIsActive) return 1;
     }
+    // A stable sort is not required here, but we can return 0
+    // to indicate that the original order should be preserved for items
+    // that are both active or both inactive.
     return 0;
   });
 
