@@ -3,11 +3,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import Skills from "@/components/skills";
 
 export default function Home() {
-  const profileImage = PlaceHolderImages.find(p => p.id === 'about-profile');
   
   return (
     <div className="container mx-auto px-4 flex-grow flex items-center justify-center">
@@ -18,12 +15,11 @@ export default function Home() {
             <div className="md:col-span-1 flex justify-center">
                 <div className="relative w-48 h-64 md:w-64 md:h-80 rounded-lg overflow-hidden shadow-lg shadow-primary/30">
                   <Image
-                    src={profileImage?.imageUrl || "/placeholder.jpg"}
+                    src="https://www.gazel.net/img/pp.jpg"
                     alt="Profile picture"
                     fill
                     sizes="(max-width: 768px) 33vw, 256px"
                     className="object-cover"
-                    data-ai-hint={profileImage?.imageHint || "person portrait"}
                   />
                 </div>
             </div>
