@@ -31,8 +31,8 @@ export default function Home() {
               )}
             </div>
             <div className="md:col-span-2 prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground text-center md:text-left">
-              <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
-                Tools and Pipeline TD
+              <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 whitespace-nowrap">
+                Hello, I'm Elie Gazel
               </h1>
               <p>
                 Hello! I'm a passionate Tools and Pipeline Developer with over a decade of experience in the trenches of the video game and 3D animation industries. My mission is to empower artists by building robust, intuitive, and efficient workflows that let creativity flourish without technical constraints.
