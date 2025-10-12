@@ -1,11 +1,14 @@
 import ProjectGrid from "@/components/project-grid";
 import { projects } from "@/lib/data";
 import type { Metadata } from 'next';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata: Metadata = {
   title: 'Projects | Synapse Portfolio',
   description: 'Explore the full range of tools and pipeline projects.',
 };
+
+const categories = ["Unreal Engine", "Unity", "Web", "Misc"];
 
 export default function ProjectsPage() {
   return (
@@ -18,7 +21,19 @@ export default function ProjectsPage() {
           A collection of tools, pipeline solutions, and procedural systems developed for games and animation.
         </p>
       </div>
-      <ProjectGrid projects={projects} />
+      
+      <Tabs defaultValue={categories[0]} className="w-full">
+        <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-12">
+          {categories.map((category) => (
+            <TabsTrigger key={category} value={category}>{category}</TabsTrigger>
+          ))}
+        </TabsList>
+        {categories.map((category) => (
+          <TabsContent key={category} value={category}>
+            <ProjectGrid projects={projects.filter(p => p.category === category)} />
+          </TabsContent>
+        ))}
+      </Tabs>
     </div>
   );
 }

@@ -28,18 +28,18 @@ export const projects: Project[] = [
   {
     slug: 'houdini-terrain-generator',
     title: 'Houdini Terrain Generator',
-    category: 'Procedural Generation',
+    category: 'Misc',
     description: 'A procedural terrain generator tool built for Houdini, enabling artists to create vast and realistic landscapes with ease.',
     imageUrl: findImage('project-hero-1').imageUrl,
     imageHint: findImage('project-hero-1').imageHint,
     technologies: ['Houdini', 'VEX', 'Python', 'SideFX Labs'],
     longDescription: `<p>The Houdini Terrain Generator is a comprehensive toolset designed to streamline the creation of realistic terrains within SideFX Houdini. Leveraging the power of proceduralism, it allows for non-destructive workflows, giving artists immense creative freedom.</p><p>Key features include multi-layered noise functions, erosion simulation based on hydraulic and thermal principles, and intelligent scattering of foliage and rocks based on slope and altitude. The tool was developed using a combination of VEX for performance-critical operations and Python for user interface and pipeline integration.</p>`,
-    modelUrl: '/models/terrain.glb', // Placeholder
+    modelUrl: '/models/terrain.glb',
   },
   {
     slug: 'maya-auto-rigger',
     title: 'Maya Auto-Rigger',
-    category: 'Character Rigging',
+    category: 'Misc',
     description: 'An advanced auto-rigging tool for Maya that generates robust bipedal and quadrupedal rigs in minutes.',
     imageUrl: findImage('project-hero-2').imageUrl,
     imageHint: findImage('project-hero-2').imageHint,
@@ -49,13 +49,43 @@ export const projects: Project[] = [
   {
     slug: 'asset-management-pipeline',
     title: 'Asset Management Pipeline',
-    category: 'Pipeline Development',
+    category: 'Misc',
     description: 'A studio-wide asset management system for tracking, versioning, and reviewing 3D assets.',
     imageUrl: findImage('project-hero-3').imageUrl,
     imageHint: findImage('project-hero-3').imageHint,
     technologies: ['Python', 'ShotGrid (Shotgun) API', 'PostgreSQL', 'Docker'],
     longDescription: `<p>Developed a full-featured asset management pipeline to handle the lifecycle of 3D assets from creation to final render. The system integrates seamlessly with major DCCs like Maya, Houdini, and Substance Painter.</p><p>It provides artists with a simple interface to publish, version, and import assets, while providing production managers with a dashboard to track progress and status. The backend is powered by a PostgreSQL database and utilizes the ShotGrid API for robust production tracking. The entire infrastructure is containerized with Docker for easy deployment and scalability.</p>`,
   },
+  {
+    slug: 'unreal-engine-procedural-foliage',
+    title: 'Unreal Engine Procedural Foliage',
+    category: 'Unreal Engine',
+    description: 'A procedural foliage placement tool for Unreal Engine 5, using Blueprints and C++ to create realistic environments.',
+    imageUrl: findImage('project-hero-1').imageUrl,
+    imageHint: 'unreal engine forest',
+    technologies: ['Unreal Engine 5', 'Blueprints', 'C++'],
+    longDescription: `<p>This tool for Unreal Engine 5 allows level designers to quickly populate large environments with procedurally placed foliage, rocks, and other assets based on landscape layers and physical rules.</p>`,
+  },
+  {
+    slug: 'unity-inventory-system',
+    title: 'Unity Inventory System',
+    category: 'Unity',
+    description: 'A flexible and data-driven inventory and crafting system for Unity, built with C# and ScriptableObjects.',
+    imageUrl: findImage('project-hero-2').imageUrl,
+    imageHint: 'video game inventory',
+    technologies: ['Unity', 'C#', 'ScriptableObjects'],
+    longDescription: `<p>A complete inventory and crafting system for Unity games. It uses ScriptableObjects to define items, recipes, and inventory configurations, making it highly extensible and easy for designers to use.</p>`,
+  },
+  {
+    slug: 'web-based-3d-model-viewer',
+    title: 'Web-based 3D Model Viewer',
+    category: 'Web',
+    description: 'An interactive 3D model viewer for the web using Three.js and React, with support for glTF models and custom animations.',
+    imageUrl: findImage('project-hero-3').imageUrl,
+    imageHint: '3d web viewer',
+    technologies: ['React', 'Three.js', 'Next.js', 'TypeScript'],
+    longDescription: `<p>An interactive 3D model viewer built with Three.js and React. It allows users to upload, view, and interact with 3D models directly in their browser. Supports PBR materials, animations, and environment lighting.</p>`,
+  }
 ];
 
 export const blogPosts: BlogPost[] = [
