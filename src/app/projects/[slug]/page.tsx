@@ -49,7 +49,7 @@ export default function ProjectDetailPage({ params }: { params: { slug:string } 
             </Link>
         </Button>
         <div>
-          <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight uppercase">{project.title}</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight uppercase">{project.title}<span className="text-primary animate-blink">|</span></h1>
           <p className="text-xl text-muted-foreground">{project.category}</p>
         </div>
       </div>

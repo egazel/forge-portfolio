@@ -12,7 +12,7 @@ export default function ContactPage() {
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-3 uppercase">
-            Let's Connect
+            Let's Connect<span className="text-primary animate-blink">|</span>
           </h1>
           <p className="text-lg text-muted-foreground">
             Have a project, an opportunity, or just want to talk tech? Drop me a line.
