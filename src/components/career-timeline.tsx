@@ -24,16 +24,16 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
             <>
               <div className="w-1/2 pr-8 flex justify-end py-4">
                 <Card className="w-full max-w-md">
-                  <CardHeader>
+                  <CardHeader className="py-4">
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
                       <p className="font-semibold text-primary">{item.institution}</p>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="py-0">
                       <p className="text-muted-foreground text-sm">{item.description}</p>
                   </CardContent>
                   {item.tags && item.tags.length > 0 && (
-                    <CardFooter className="flex flex-wrap gap-2 pb-4 px-6">
+                    <CardFooter className="flex flex-wrap gap-2 pt-4 pb-4 px-6">
                       {item.tags.map(tag => (
                         <Badge key={tag} variant="secondary">{tag}</Badge>
                       ))}
@@ -49,16 +49,16 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
               <div className="w-1/2"></div>
               <div className="w-1/2 pl-8 flex justify-start py-4">
                  <Card className="w-full max-w-md">
-                  <CardHeader>
+                  <CardHeader className="py-4">
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
                       <p className="font-semibold text-primary">{item.institution}</p>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="py-0">
                       <p className="text-muted-foreground text-sm">{item.description}</p>
                   </CardContent>
                   {item.tags && item.tags.length > 0 && (
-                    <CardFooter className="flex flex-wrap gap-2 pb-4 px-6">
+                    <CardFooter className="flex flex-wrap gap-2 pt-4 pb-4 px-6">
                       {item.tags.map(tag => (
                         <Badge key={tag} variant="secondary">{tag}</Badge>
                       ))}
