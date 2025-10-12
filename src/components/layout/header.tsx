@@ -15,8 +15,6 @@ const navItems = [
   { href: "/projects", label: "Projects" },
   { href: "/career", label: "Career" },
   { href: "/references", label: "References" },
-  { href: "/blog", label: "Blog" },
-  { href: "/curator", label: "AI Curator" },
   { href: "/contact", label: "Contact" },
 ];
 

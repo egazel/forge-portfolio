@@ -12,16 +12,6 @@ export interface Project {
   modelUrl?: string;
 }
 
-export interface BlogPost {
-  slug: string;
-  title: string;
-  date: string;
-  excerpt: string;
-  imageUrl: string;
-  imageHint: string;
-  content: string;
-}
-
 export interface Reference {
   name: string;
   title: string;
@@ -106,27 +96,6 @@ export const projects: Project[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [
-  {
-    slug: 'the-rise-of-usd-in-vfx',
-    title: 'The Rise of USD in Modern VFX Pipelines',
-    date: '2024-05-15',
-    excerpt: 'A deep dive into Pixar\'s Universal Scene Description and why it\'s revolutionizing collaboration in the animation and VFX industry.',
-    imageUrl: findImage('blog-thumb-1').imageUrl,
-    imageHint: findImage('blog-thumb-1').imageHint,
-    content: `<p>Universal Scene Description (USD) is more than just a file format; it's a powerful framework for composing and collaborating on 3D scenes. In this post, we'll explore the core concepts of USD, such as layers, prims, and composition arcs, and discuss how they enable non-destructive, parallel workflows.</p><h3>Why is USD a Game-Changer?</h3><p>Traditionally, passing complex scenes between departments has been a major bottleneck. USD addresses this with its layering system, allowing lighting, animation, and FX artists to work on the same scene simultaneously without overwriting each other's work. We'll look at a practical example of how a character asset can be developed and integrated into a shot using USD.</p>`,
-  },
-  {
-    slug: 'machine-learning-for-tool-devs',
-    title: 'How Machine Learning is Shaping the Future of Tool Development',
-    date: '2024-04-22',
-    excerpt: 'Exploring the intersection of machine learning and pipeline development, from intelligent asset tagging to predictive rendering.',
-    imageUrl: findImage('blog-thumb-2').imageUrl,
-    imageHint: findImage('blog-thumb-2').imageHint,
-    content: `<p>Machine learning is rapidly moving from a theoretical concept to a practical tool in the arsenal of pipeline developers. This article covers several exciting applications of ML in modern production environments.</p><h3>Practical Applications</h3><ul><li><strong>Predictive Analytics:</strong> Using historical render data to predict render times and resource allocation.</li><li><strong>Intelligent Content Creation:</strong> Automating tasks like UV unwrapping, weight painting, and even generating procedural textures based on concept art.</li><li><strong>Smart Asset Management:</strong> As demonstrated by the Curator tool on this site, AI can automatically analyze and tag assets, making them easier to find and manage.</li></ul><p>We are just scratching the surface of what's possible, and the future for AI-assisted content creation is incredibly bright.</p>`,
-  },
-];
-
 export const references: Reference[] = [
   {
     name: 'Jane Doe',
@@ -198,4 +167,3 @@ export const careerPath: CareerItem[] = [
 ];
 
 export const getProjectBySlug = (slug: string) => projects.find(p => p.slug === slug);
-export const getBlogPostBySlug = (slug: string) => blogPosts.find(p => p.slug === slug);

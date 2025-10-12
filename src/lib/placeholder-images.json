@@ -19,18 +19,6 @@
       "imageHint": "3d mechanical"
     },
     {
-      "id": "blog-thumb-1",
-      "description": "Close up on lines of code on a dark screen.",
-      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
-      "imageHint": "code screen"
-    },
-    {
-      "id": "blog-thumb-2",
-      "description": "A person sketching ideas on a whiteboard.",
-      "imageUrl": "https://picsum.photos/seed/blog2/600/400",
-      "imageHint": "whiteboard sketch"
-    },
-    {
       "id": "about-profile",
       "description": "Profile picture of the developer.",
       "imageUrl": "https://picsum.photos/seed/profile/400/400",
