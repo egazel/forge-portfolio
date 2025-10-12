@@ -15,7 +15,7 @@ export default function CuratorPage() {
           <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-4">
             <Bot className="h-8 w-8 text-primary" />
           </div>
-          <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-3">
+          <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-3 uppercase">
             AI Portfolio Curator
           </h1>
           <p className="text-lg text-muted-foreground">

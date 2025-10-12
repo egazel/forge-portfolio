@@ -39,7 +39,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     <article className="container mx-auto px-4 py-12 md:py-20 max-w-3xl">
       <header className="mb-8 text-center">
         <p className="text-muted-foreground mb-2">{format(new Date(post.date), "MMMM d, yyyy")}</p>
-        <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">{post.title}</h1>
+        <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight uppercase">{post.title}</h1>
       </header>
 
       <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-12 shadow-lg shadow-black/20">

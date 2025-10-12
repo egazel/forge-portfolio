@@ -41,7 +41,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
   return (
     <div className="container mx-auto px-4 py-12 md:py-20">
       <div className="mb-8">
-        <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-2">{project.title}</h1>
+        <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-2 uppercase">{project.title}</h1>
         <p className="text-xl text-muted-foreground">{project.category}</p>
       </div>
 
@@ -59,7 +59,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div className="lg:col-span-2 space-y-6">
-          <h2 className="font-headline text-2xl font-bold">About the Project</h2>
+          <h2 className="font-headline text-2xl font-bold uppercase">About the Project</h2>
           <div
             className="prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground"
             dangerouslySetInnerHTML={{ __html: project.longDescription }}
@@ -68,7 +68,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
         <div className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle className="font-headline text-2xl">Technologies Used</CardTitle>
+              <CardTitle className="font-headline text-2xl uppercase">Technologies Used</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
@@ -81,7 +81,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           {project.modelUrl && (
             <Card>
               <CardHeader>
-                <CardTitle className="font-headline text-2xl">Interactive 3D Model</CardTitle>
+                <CardTitle className="font-headline text-2xl uppercase">Interactive 3D Model</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="aspect-square w-full bg-slate-900/50 rounded-md overflow-hidden border">

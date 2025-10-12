@@ -11,7 +11,7 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-12 md:py-20">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-3">
+          <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-3 uppercase">
             Let's Connect
           </h1>
           <p className="text-lg text-muted-foreground">

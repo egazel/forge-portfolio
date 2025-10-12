@@ -31,7 +31,7 @@ export default function Home() {
               )}
             </div>
             <div className="md:col-span-2 prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground text-center md:text-left">
-              <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 whitespace-nowrap">
+              <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 whitespace-nowrap uppercase">
                 Hello, I'm Elie Gazel
               </h1>
               <p>
@@ -58,7 +58,7 @@ export default function Home() {
       </section>
 
       <section className="mb-20 md:mb-32">
-        <h2 className="font-headline text-3xl md:text-4xl font-bold mb-8 text-center">
+        <h2 className="font-headline text-3xl md:text-4xl font-bold mb-8 text-center uppercase">
           Featured Work
         </h2>
         <ProjectGrid projects={projects.slice(0, 3)} />
