@@ -70,23 +70,23 @@ export default function ProjectDetailPage({ params }: { params: { slug:string } 
         </div>
         <div className="lg:col-span-3 space-y-8">
           <Card>
-            <CardHeader>
+            <CardHeader className="flex flex-row items-center justify-between">
               <CardTitle className="font-headline text-2xl uppercase">Technologies Used</CardTitle>
+               {project.repoUrl && (
+                <Button asChild variant="outline">
+                  <Link href={project.repoUrl} target="_blank">
+                    <Github />
+                    GitHub
+                  </Link>
+                </Button>
+              )}
             </CardHeader>
-            <CardContent className="flex flex-col gap-4">
+            <CardContent>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
                   <Badge key={tech} variant="default">{tech}</Badge>
                 ))}
               </div>
-              {project.repoUrl && (
-                <Button asChild variant="outline">
-                  <Link href={project.repoUrl} target="_blank">
-                    <Github />
-                    View on GitHub
-                  </Link>
-                </Button>
-              )}
             </CardContent>
           </Card>
           
