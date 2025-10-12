@@ -91,18 +91,6 @@ export default function ProjectDetailPage({ params }: { params: { slug:string } 
             />
           </div>
 
-          {project.modelUrl && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="font-headline text-2xl uppercase">Interactive 3D Model</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="aspect-square w-full bg-slate-900/50 rounded-md overflow-hidden border">
-                  <ThreeViewer />
-                </div>
-              </CardContent>
-            </Card>
-          )}
         </div>
       </div>
     </div>
