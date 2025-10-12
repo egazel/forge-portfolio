@@ -16,7 +16,7 @@ const ThreeViewer = () => {
     // Camera
     const camera = new THREE.PerspectiveCamera(
       75,
-      mountRef.current.clientWidth / mountRef.current.clientHeight,
+      mountRef.current.clientWidth / mount.current.clientHeight,
       0.1,
       1000
     );
