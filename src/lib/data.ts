@@ -109,7 +109,7 @@ export const references: Reference[] = [
     name: 'Loïc Hamot',
     title: 'Senior tools programmer',
     company: 'Wild Sheep Studio',
-    quote: "Mr. Elie Gazel [...] held the position of Tools Programmer where he developed the editors of Scene, Entities, and Terrain in the 3DStudioMax application. Within our company, Mr. Elie Gazel has acquired solid skills in programming, user interface and data manipulation but also in tasks managment and producing. He fulfilled his mission with diligence and a great concern for the user experience, despite a complex technical environment.",
+    quote: "Mr. Elie Gazel [...] held the position of Tools Programmer where he developed the editors of Scene, Entities, and Terrain in the 3DStudioMax application. Within our company, Mr. Elie Gazel has acquired solid skills in programming, user interface and data manipulation but also in tasks managment and producing.\nHe fulfilled his mission with diligence and a great concern for the user experience, despite a complex technical environment.",
     imageUrl: findImage('rec-profile-1').imageUrl,
     imageHint: findImage('rec-profile-1').imageHint,
   },
@@ -117,7 +117,7 @@ export const references: Reference[] = [
     name: 'Teddy Delrue',
     title: 'Senior Technical Artist',
     company: 'Wild Sheep Studio',
-    quote: "Elie played a crucial role in the set up of complex pipelines and custom tools creation, allowing for a faster assets and scenes creation in our game. In addition to being reactive and able to handle multiple tasks simultaneously, he possesses a global vision of the project and its needs, allowing him to priorize efficiently. Since we constantly share the same tools, it is obvious that Elie has a technical expertise as strong as a 3D graphist. Elie became an essential part of the studio, and working with him is a genuine pleasure. In addition to his technical skills, he is also very social and integrates perfectly in our working environment.",
+    quote: "Elie played a crucial role in the set up of complex pipelines and custom tools creation, allowing for a faster assets and scenes creation in our game.\nIn addition to being reactive and able to handle multiple tasks simultaneously, he possesses a global vision of the project and its needs, allowing him to priorize efficiently. \nSince we constantly share the same tools, it is obvious that Elie has a technical expertise as strong as a 3D graphist. Elie became an essential part of the studio, and working with him is a genuine pleasure.\nIn addition to his technical skills, he is also very social and integrates perfectly in our working environment.",
     imageUrl: findImage('rec-profile-2').imageUrl,
     imageHint: findImage('rec-profile-2').imageHint,
   },
@@ -125,7 +125,7 @@ export const references: Reference[] = [
     name: 'Ferdinand Fayollet',
     title: 'Senior tools programmer',
     company: 'Wild Sheep Studio',
-    quote: "Elie inherited a very large and very badly maintained code base of max script used for many internal tools for level creation, art creation, general pipeline, etc. He managed to implement well designed and robust new features, fix bugs, optimize and cleanup when necessary. He was also very careful with making sure everything was thoroughly tested. He did an amazing job at managing priorities, jumping from tasks to tasks, sometimes multiple times a day. All that while maintaining a positive and friendly attitude with everybody at the studio. I definitely recommend him for any tools or tech art job in the games industry. He acquired already far enough experience to be very versatile and adaptable in my opinion.",
+    quote: "Elie inherited a very large and very badly maintained code base of max script used for many internal tools for level creation, art creation, general pipeline, etc. He managed to implement well designed and robust new features, fix bugs, optimize and cleanup when necessary. He was also very careful with making sure everything was thoroughly tested.\nHe did an amazing job at managing priorities, jumping from tasks to tasks, sometimes multiple times a day. All that while maintaining a positive and friendly attitude with everybody at the studio.\nI definitely recommend him for any tools or tech art job in the games industry. He acquired already far enough experience to be very versatile and adaptable in my opinion.",
     imageUrl: findImage('rec-profile-3').imageUrl,
     imageHint: findImage('rec-profile-3').imageHint,
   },
@@ -142,43 +142,67 @@ export const references: Reference[] = [
 export const careerPath: CareerItem[] = [
   {
     type: 'Work',
-    title: 'Senior Pipeline TD',
-    institution: 'DreamWorks Animation',
-    date: '2020 - Present',
-    description: 'Developed and maintained core pipeline tools for feature animation. Specialized in asset management, render farm optimization, and developing artist-facing tools for Maya and Houdini.',
-    tags: ['Python', 'Maya', 'Houdini', 'ShotGrid API', 'USD']
-  },
-  {
-    type: 'Work',
-    title: 'Tools & Pipeline Developer',
-    institution: 'Ubisoft',
-    date: '2016 - 2020',
+    title: '3D Tools & Pipeline Developer',
+    institution: 'Ubisoft Montpellier',
+    date: 'Oct. 2024 - Current',
     description: 'Worked on the "Assassin\'s Creed" franchise. Created procedural world-building tools, automated character and environment art pipelines, and provided direct support to the art team.',
-    tags: ['Python', 'C#', 'Anvil Engine', '3ds Max']
-  },
-  {
-    type: 'Education',
-    title: 'M.S. in Computer Graphics',
-    institution: 'Stanford University',
-    date: '2014 - 2016',
-    description: 'Focused on real-time rendering, physics simulation, and geometry processing. Thesis project involved developing a novel technique for procedural character animation.',
-    tags: ['C++', 'OpenGL', 'Physics Simulation']
+    tags: ['Python', 'Maya', 'GitLab', 'In house tools and pipelines']
   },
   {
     type: 'Work',
-    title: 'Junior Technical Artist',
-    institution: 'BioWare',
-    date: '2012 - 2014',
-    description: 'Assisted in rigging, scripting, and shader development for "Mass Effect 3". Wrote Mel and Python scripts to automate repetitive tasks for animators and character artists.',
-    tags: ['MEL', 'Python', 'Unreal Engine 3', 'HLSL']
+    title: 'Tools & Pipeline Developer - Tech Artist',
+    institution: 'Wild Sheep Studio',
+    date: 'Jan. 2021 - Nov. 2023 ',
+    description: 'On "WiLD", then on an unannounced project, worked on creating and maintaining the custom tools and pipelines for terrain, level and assets creation:\n- Game edition pipelines and tools\n- Tools code base migration\n- Photometry scanner (arduino, python, IoT)\n- C++/Vulkan stamper development\n- Jenkins builds for tools CI/CD',
+    tags: ['3DSMax', 'MAXScript', 'C++', 'C#', 'Perforce', 'GitHub', 'Jenkins', 'In house tools and pipelines']
+  },
+  {
+    type: 'Work',
+    title: 'Associate Technical Producer',
+    institution: ' Wild Sheep Studio ',
+    date: 'Sep. 2020 - Jan. 2021',
+    description: 'On "WiLD", managed and monitored the production planning, followed the tech teams progress, managed meetings and communication, proposed different management tools',
+    tags: ['Management', 'Organization', 'Multi-tasking', 'Communication', 'Atlassian suite']
+  },
+  {
+    type: 'Work',
+    title: '3D Tools & Pipeline Developer',
+    institution: 'TAT Studio',
+    date: 'Aug. 2019 - Sep. 2020',
+    description: 'Worked on the "Assassin\'s Creed" franchise. Created procedural world-building tools, automated character and environment art pipelines, and provided direct support to the art team.',
+    tags: ['Python', 'Maya', 'GitLab', 'In house tools and pipelines']
   },
   {
     type: 'Education',
-    title: 'B.S. in Computer Science',
-    institution: 'University of Waterloo',
-    date: '2008 - 2012',
-    description: 'Graduated with honors. Specialized in software engineering and human-computer interaction. Completed co-op terms at several game development studios.',
-    tags: ['Java', 'C++', 'Data Structures']
+    title: 'Bachelor\'s degree',
+    institution: 'EPSI Montpellier',
+    date: '2019 - 2020',
+    description: 'Graduated from 3rd year at the ingeneering school EPSI Montpellier. I also got a bachelor\'s degree in "Conception and Developement of Applications". ',
+    tags: ['C#', 'Python', 'Angular', 'Symfony', 'Powershell', 'Ethical Hacking', 'IOT', 'Database management', 'DevOps', 'Java', 'C++', 'Data Structures']
+  },
+  {
+    type: 'Education',
+    title: 'BTEC Higher National Diploma',
+    institution: 'ESICAD Montpellier',
+    date: '2017 - 2019',
+    description: 'Fresh start at studies after a few years working. Obtained a 2 years diploma, graduated top of class both years.',
+    tags: ['Algorithmic', 'HTML5', 'CSS3', 'PHP7', 'jQuery']
+  },
+  {
+    type: 'Work',
+    title: 'Waiter',
+    institution: 'Various restaurants',
+    date: '2015 - 2017',
+    description: 'Worked as a waiter in different restaurants, mostly in the 4* hotel restaurant "La Chapelle Saint-Martin" (Limoges, France)',
+    tags: ['Work under stress', 'Multi-tasking', 'Punctuality', 'Customer relationship']
+  },
+  {
+    type: 'Education',
+    title: 'Highschool diploma',
+    institution: 'Lycée Auguste Renoir',
+    date: '2013',
+    description: 'Obtained a scientific high school diploma, with biology speciality.',
+    tags: []
   },
 ];
 
