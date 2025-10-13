@@ -1,8 +1,10 @@
 "use server";
 
 import { z } from "zod";
+import { Resend } from "resend";
 
-// Contact Form
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
   email: z.string().email("Invalid email address."),
@@ -24,11 +26,30 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     };
   }
 
-  // In a real app, you would send an email, save to a database, etc.
-  console.log("Contact Form Submitted:", validatedFields.data);
+  const { name, email, message } = validatedFields.data;
 
-  return {
-    type: "success",
-    message: "Thank you for your message! I'll get back to you soon.",
-  };
+  try {
+    const data = await resend.emails.send({
+      from: 'Portfolio Contact Form <onboarding@resend.dev>', // This must be a verified domain in Resend
+      to: 'your-email@example.com', // CHANGE THIS to your actual email address
+      subject: `New message from ${name} via your portfolio`,
+      reply_to: email,
+      html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`,
+    });
+
+    if (data.error) {
+        throw new Error(data.error.message);
+    }
+
+    return {
+      type: "success",
+      message: "Thank you for your message! I'll get back to you soon.",
+    };
+  } catch (error) {
+    console.error("Failed to send email:", error);
+    return {
+      type: "error",
+      message: "Something went wrong. Please try again later.",
+    };
+  }
 }
