@@ -117,7 +117,7 @@ export const references: Reference[] = [
     name: 'Teddy Delrue',
     title: 'Senior Technical Artist',
     company: 'Wild Sheep Studio',
-    quote: "Working with Elie played a crucial role in the set up of complex pipelines and custom tools creation, allowing for a faster assets and scenes creation in our game. In addition to being reactive and able to handle multiple tasks simultaneously, he possesses a global vision of the project and its needs, allowing him to priorize efficiently. Since we constantly share the same tools, it is obvious that Elie has a technical expertise as strong as a 3D graphist. Elie became an essential part of the studio, and working with him is a genuine pleasure. In addition to his technical skills, he is also very social and integrates perfectly in our working environment.",
+    quote: "Elie played a crucial role in the set up of complex pipelines and custom tools creation, allowing for a faster assets and scenes creation in our game. In addition to being reactive and able to handle multiple tasks simultaneously, he possesses a global vision of the project and its needs, allowing him to priorize efficiently. Since we constantly share the same tools, it is obvious that Elie has a technical expertise as strong as a 3D graphist. Elie became an essential part of the studio, and working with him is a genuine pleasure. In addition to his technical skills, he is also very social and integrates perfectly in our working environment.",
     imageUrl: findImage('rec-profile-2').imageUrl,
     imageHint: findImage('rec-profile-2').imageHint,
   },
