@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Cpu, Menu, X, Download } from "lucide-react";
+import { Cpu, Menu, X, ArrowDownToLine } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -58,8 +58,8 @@ const Header = () => {
             <ThemeToggle />
             <Button asChild variant="ghost" size="icon">
               <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                <Download />
-                <span className="sr-only">Download Resume</span>
+                <ArrowDownToLine />
+                <span className="sr-only">My Resume</span>
               </Link>
             </Button>
             <div className="md:hidden">
