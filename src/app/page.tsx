@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ArrowRight, ArrowDownToLine } from "lucide-react";
 import Image from "next/image";
 
+// This is a comment to help reset the editor view.
+
 export default function Home() {
   
   return (
