@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -23,9 +24,10 @@ const ReferenceCard = ({ reference }: ReferenceCardProps) => {
         </div>
         <div className="relative flex-1">
           <Quote className="absolute -top-2 -left-3 h-8 w-8 text-primary/20" />
-          <blockquote className="pl-4 italic text-muted-foreground">
-            {reference.quote}
-          </blockquote>
+          <blockquote
+            className="pl-4 italic text-muted-foreground"
+            dangerouslySetInnerHTML={{ __html: reference.quote }}
+          />
         </div>
       </CardContent>
     </Card>

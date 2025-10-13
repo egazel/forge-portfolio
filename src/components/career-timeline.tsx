@@ -34,7 +34,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                   <p className="font-semibold text-primary">{item.institution}</p>
               </CardHeader>
               <CardContent className="py-0">
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                  <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
               </CardContent>
               {item.tags && item.tags.length > 0 && (
                 <CardFooter className="flex flex-wrap gap-2 pt-4 pb-4 px-6">
@@ -57,7 +57,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                       <p className="font-semibold text-primary">{item.institution}</p>
                   </CardHeader>
                   <CardContent className="py-0">
-                      <p className="text-muted-foreground text-sm">{item.description}</p>
+                      <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
                   </CardContent>
                   {item.tags && item.tags.length > 0 && (
                     <CardFooter className="flex flex-wrap gap-2 pt-4 pb-4 px-6">
@@ -82,7 +82,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                       <p className="font-semibold text-primary">{item.institution}</p>
                   </CardHeader>
                   <CardContent className="py-0">
-                      <p className="text-muted-foreground text-sm">{item.description}</p>
+                      <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
                   </CardContent>
                   {item.tags && item.tags.length > 0 && (
                     <CardFooter className="flex flex-wrap gap-2 pt-4 pb-4 px-6">

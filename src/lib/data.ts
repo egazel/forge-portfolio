@@ -16,7 +16,7 @@ export interface Project {
 
 export interface Reference {
   name: string;
-  title: string;
+  title:string;
   company: string;
   quote: string;
   imageUrl: string;
@@ -109,7 +109,7 @@ export const references: Reference[] = [
     name: 'Loïc Hamot',
     title: 'Senior tools programmer',
     company: 'Wild Sheep Studio',
-    quote: "Mr. Elie Gazel [...] held the position of Tools Programmer where he developed the editors of Scene, Entities, and Terrain in the 3DStudioMax application. Within our company, Mr. Elie Gazel has acquired solid skills in programming, user interface and data manipulation but also in tasks managment and producing.\nHe fulfilled his mission with diligence and a great concern for the user experience, despite a complex technical environment.",
+    quote: "Mr. Elie Gazel [...] held the position of Tools Programmer where he developed the editors of Scene, Entities, and Terrain in the 3DStudioMax application.<br /><br />Within our company, Mr. Elie Gazel has acquired solid skills in programming, user interface and data manipulation but also in tasks managment and producing.<br /><br />He fulfilled his mission with diligence and a great concern for the user experience, despite a complex technical environment.",
     imageUrl: findImage('rec-profile-1').imageUrl,
     imageHint: findImage('rec-profile-1').imageHint,
   },
@@ -117,7 +117,7 @@ export const references: Reference[] = [
     name: 'Teddy Delrue',
     title: 'Senior Technical Artist',
     company: 'Wild Sheep Studio',
-    quote: "Elie played a crucial role in the set up of complex pipelines and custom tools creation, allowing for a faster assets and scenes creation in our game.\nIn addition to being reactive and able to handle multiple tasks simultaneously, he possesses a global vision of the project and its needs, allowing him to priorize efficiently. \nSince we constantly share the same tools, it is obvious that Elie has a technical expertise as strong as a 3D graphist. Elie became an essential part of the studio, and working with him is a genuine pleasure.\nIn addition to his technical skills, he is also very social and integrates perfectly in our working environment.",
+    quote: "Elie played a crucial role in the set up of complex pipelines and custom tools creation, allowing for a faster assets and scenes creation in our game.<br /><br />In addition to being reactive and able to handle multiple tasks simultaneously, he possesses a global vision of the project and its needs, allowing him to priorize efficiently. <br /><br />Since we constantly share the same tools, it is obvious that Elie has a technical expertise as strong as a 3D graphist. Elie became an essential part of the studio, and working with him is a genuine pleasure.<br /><br />In addition to his technical skills, he is also very social and integrates perfectly in our working environment.",
     imageUrl: findImage('rec-profile-2').imageUrl,
     imageHint: findImage('rec-profile-2').imageHint,
   },
@@ -125,7 +125,7 @@ export const references: Reference[] = [
     name: 'Ferdinand Fayollet',
     title: 'Senior tools programmer',
     company: 'Wild Sheep Studio',
-    quote: "Elie inherited a very large and very badly maintained code base of max script used for many internal tools for level creation, art creation, general pipeline, etc. He managed to implement well designed and robust new features, fix bugs, optimize and cleanup when necessary. He was also very careful with making sure everything was thoroughly tested.\nHe did an amazing job at managing priorities, jumping from tasks to tasks, sometimes multiple times a day. All that while maintaining a positive and friendly attitude with everybody at the studio.\nI definitely recommend him for any tools or tech art job in the games industry. He acquired already far enough experience to be very versatile and adaptable in my opinion.",
+    quote: "Elie inherited a very large and very badly maintained code base of max script used for many internal tools for level creation, art creation, general pipeline, etc. He managed to implement well designed and robust new features, fix bugs, optimize and cleanup when necessary. He was also very careful with making sure everything was thoroughly tested.<br /><br />He did an amazing job at managing priorities, jumping from tasks to tasks, sometimes multiple times a day. All that while maintaining a positive and friendly attitude with everybody at the studio.<br /><br />I definitely recommend him for any tools or tech art job in the games industry. He acquired already far enough experience to be very versatile and adaptable in my opinion.",
     imageUrl: findImage('rec-profile-3').imageUrl,
     imageHint: findImage('rec-profile-3').imageHint,
   },
@@ -145,7 +145,7 @@ export const careerPath: CareerItem[] = [
     title: '3D Tools & Pipeline Developer',
     institution: 'Ubisoft Montpellier',
     date: 'Oct. 2024 - Current',
-    description: 'Worked on the "Assassin\'s Creed" franchise. Created procedural world-building tools, automated character and environment art pipelines, and provided direct support to the art team.',
+    description: 'Working on an unannounced project.',
     tags: ['Python', 'Maya', 'GitLab', 'In house tools and pipelines']
   },
   {
@@ -153,7 +153,7 @@ export const careerPath: CareerItem[] = [
     title: 'Tools & Pipeline Developer - Tech Artist',
     institution: 'Wild Sheep Studio',
     date: 'Jan. 2021 - Nov. 2023 ',
-    description: 'On "WiLD", then on an unannounced project, worked on creating and maintaining the custom tools and pipelines for terrain, level and assets creation:\n- Game edition pipelines and tools\n- Tools code base migration\n- Photometry scanner (arduino, python, IoT)\n- C++/Vulkan stamper development\n- Jenkins builds for tools CI/CD',
+    description: 'On "WiLD", then on an unannounced project, worked on creating and maintaining the custom tools and pipelines for terrain, level and assets creation:<br />- Game edition pipelines and tools<br />- Tools code base migration<br />- Photometry scanner (arduino, python, IoT)<br />- C++/Vulkan stamper development<br />- Jenkins builds for tools CI/CD',
     tags: ['3DSMax', 'MAXScript', 'C++', 'C#', 'Perforce', 'GitHub', 'Jenkins', 'In house tools and pipelines']
   },
   {
@@ -169,8 +169,8 @@ export const careerPath: CareerItem[] = [
     title: '3D Tools & Pipeline Developer',
     institution: 'TAT Studio',
     date: 'Aug. 2019 - Sep. 2020',
-    description: 'Worked on the "Assassin\'s Creed" franchise. Created procedural world-building tools, automated character and environment art pipelines, and provided direct support to the art team.',
-    tags: ['Python', 'Maya', 'GitLab', 'In house tools and pipelines']
+    description: 'Worked on the TV show "Les as de la jungle à la rescousse !".<br />Created and maintained the tools and pipeline for the production of the show.<br />- Automated rigging and animation tools<br />- Pipeline integration for different departments<br />- User support and training',
+    tags: ['Python', 'Maya', 'Shotgun', 'Redshift', 'GitLab', 'In house tools and pipelines']
   },
   {
     type: 'Education',
