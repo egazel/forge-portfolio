@@ -4,7 +4,7 @@ import { careerPath } from "@/lib/data";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Career | Synapse Portfolio',
+  title: 'Career | Elie Gazel Portfolio',
   description: 'A timeline of my professional experience and education.',
 };
 

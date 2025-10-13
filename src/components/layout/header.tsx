@@ -47,7 +47,7 @@ const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold font-headline text-lg">
           <Cpu className="text-primary h-7 w-7" />
-          Synapse
+          Elie Gazel
         </Link>
         <nav className="hidden md:flex items-center gap-2">
           {navItems.map((item) => (
@@ -57,7 +57,7 @@ const Header = () => {
         <div className="flex items-center gap-2">
             <ThemeToggle />
             <Button asChild variant="ghost" size="icon">
-              <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.gazel.net/docs/CV.pdf" target="_blank" rel="noopener noreferrer">
                 <ArrowDownToLine />
                 <span className="sr-only">My Resume</span>
               </Link>
@@ -76,7 +76,7 @@ const Header = () => {
                     <div className="flex items-center justify-between p-4 border-b">
                     <Link href="/" className="flex items-center gap-2 font-bold font-headline text-lg" onClick={() => setMobileMenuOpen(false)}>
                         <Cpu className="text-primary h-7 w-7" />
-                        Synapse
+                        Elie Gazel
                     </Link>
                     </div>
                     <nav className="flex-grow p-4 space-y-2">

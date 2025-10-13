@@ -6,7 +6,7 @@ import ProjectGrid from '@/components/project-grid';
 import { projects } from '@/lib/data';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-const categories = ['Unreal Engine', 'Unity', 'Web', 'Misc'];
+const categories = ['Unity', 'Web', 'Misc'];
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState(categories[0]);

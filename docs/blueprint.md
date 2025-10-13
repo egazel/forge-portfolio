@@ -1,4 +1,4 @@
-# **App Name**: Synapse Portfolio
+# **App Name**: Elie Gazel Portfolio
 
 ## Core Features:
 

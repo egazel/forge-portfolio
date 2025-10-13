@@ -22,8 +22,8 @@ const spaceGrotesk = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title: 'Synapse Portfolio | Tools & Pipeline Developer',
-  description: 'Portfolio of a tools and pipeline software developer for the video game and 3D animation industries.',
+  title: 'Elie Gazel | Tools & Pipeline Developer',
+  description: 'Elie Gazel\'s portfolio, tools and pipeline software developer.',
 };
 
 export default function RootLayout({

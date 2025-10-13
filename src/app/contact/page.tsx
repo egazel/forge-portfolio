@@ -3,7 +3,7 @@ import ContactForm from "@/components/contact-form";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact | Synapse Portfolio',
+  title: 'Contact | Elie Gazel Portfolio',
   description: 'Get in touch for collaborations, opportunities, or just to say hello.',
 };
 

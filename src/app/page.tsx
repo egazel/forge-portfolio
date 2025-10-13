@@ -39,7 +39,7 @@ export default function Home() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.gazel.net/docs/CV.pdf" target="_blank" rel="noopener noreferrer">
                     My Resume <ArrowDownToLine />
                   </Link>
                 </Button>
