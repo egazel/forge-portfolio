@@ -33,7 +33,7 @@ export default function Home() {
               <p>
                 I specialize in Python and have extensive experience with APIs for major DCC applications like Maya, Houdini, and Nuke. From character auto-riggers to procedural environment tools and large-scale asset management systems, I thrive on solving complex problems and building the digital infrastructure that brings incredible worlds to life.
               </p>
-              <div className="flex items-center justify-center md:justify-start gap-4 mt-8">
+              <div className="flex items-center justify-center md:justify-start gap-4 mt-8 flex-wrap">
                 <Button asChild size="lg">
                   <Link href="/projects">
                     Explore Projects <ArrowRight />
@@ -42,6 +42,11 @@ export default function Home() {
                 <Button asChild variant="outline" size="lg">
                   <Link href="/contact">
                     Get in Touch
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                    Download Resume <Download />
                   </Link>
                 </Button>
               </div>

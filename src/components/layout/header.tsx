@@ -1,8 +1,9 @@
+
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Cpu, Menu, X } from "lucide-react";
+import { Cpu, Menu, X, Download } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -55,6 +56,12 @@ const Header = () => {
         </nav>
         <div className="flex items-center gap-2">
             <ThemeToggle />
+            <Button asChild variant="ghost" size="icon">
+              <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Download />
+                <span className="sr-only">Download Resume</span>
+              </Link>
+            </Button>
             <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
                 <SheetTrigger asChild>
