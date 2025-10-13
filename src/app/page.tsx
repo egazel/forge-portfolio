@@ -28,22 +28,22 @@ export default function Home() {
                 Hello, I'm Elie Gazel<span className="text-primary animate-blink">|</span>
               </h1>
               <p>
-              I'm a french developer with 5 years of experience in the video game and animation industry, currently working as a 3D Tools and Pipeline Developer for <Link href="https://tatprod.com/">TAT Studio</Link>. 
+              I'm a french developer with 5 years of experience in the video game and animation industry, currently working as a 3D Tools and Pipeline Developer for <Link href="https://tatprod.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">TAT Studio</Link>. 
               </p>
               <div className="flex items-center justify-center md:justify-start gap-4 mt-8 flex-wrap">
                 <Button asChild size="lg">
                   <Link href="/projects">
-                    Explore Projects <ArrowRight />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link href="/contact">
-                    Get in Touch
+                    My Projects <ArrowRight />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                     My Resume <ArrowDownToLine />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link href="/contact">
+                    Contact me
                   </Link>
                 </Button>
               </div>
