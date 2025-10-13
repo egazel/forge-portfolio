@@ -19,7 +19,7 @@ export default function ReferencesPage() {
           What my colleagues and supervisors say about my work.
         </p>
       </div>
-      <div className="max-w-3xl mx-auto space-y-8">
+      <div className="max-w-4xl mx-auto space-y-8">
         {references.map((rec, index) => (
           <ReferenceCard key={index} reference={rec} />
         ))}
