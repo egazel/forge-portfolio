@@ -4,20 +4,15 @@ import Link from "next/link";
 
 const socialLinks = [
   {
-    href: "https://github.com",
+    href: "https://github.com/egazel",
     icon: <Github className="h-5 w-5" />,
     label: "GitHub",
   },
   {
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/elie-gazel/",
     icon: <Linkedin className="h-5 w-5" />,
     label: "LinkedIn",
-  },
-  {
-    href: "https://twitter.com",
-    icon: <Twitter className="h-5 w-5" />,
-    label: "Twitter",
-  },
+  }
 ];
 
 const Footer = () => {

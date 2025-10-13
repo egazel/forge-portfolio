@@ -7,7 +7,7 @@ import { Cpu, Menu, X, ArrowDownToLine } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 import { ThemeToggle } from "../theme-toggle";
 
@@ -71,6 +71,7 @@ const Header = () => {
                 </Button>
                 </SheetTrigger>
                 <SheetContent side="left">
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <div className="flex flex-col h-full">
                     <div className="flex items-center justify-between p-4 border-b">
                     <Link href="/" className="flex items-center gap-2 font-bold font-headline text-lg">
