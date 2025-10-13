@@ -16,7 +16,7 @@ export default function ContactPage() {
             Let's Connect<span className="text-primary animate-blink">|</span>
           </h1>
           <p className="text-lg text-muted-foreground">
-            Have a project, an opportunity, or just want to talk tech? Drop me a line.
+            Feel free to contact, wether you're looking for a developer or just need more infos.
           </p>
         </div>
         <ContactForm />
