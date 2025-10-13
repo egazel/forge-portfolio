@@ -13,7 +13,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
             <div className="md:col-span-1 flex justify-center">
-                <div className="relative w-48 h-64 md:w-64 md:h-80 rounded-lg overflow-hidden shadow-lg shadow-primary/30">
+                <div className="relative w-48 h-80 md:w-64 md:h-96 rounded-lg overflow-hidden shadow-lg shadow-primary/30">
                   <Image
                     src="https://www.gazel.net/img/pp.jpg"
                     alt="Profile picture"
