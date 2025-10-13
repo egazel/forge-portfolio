@@ -3,6 +3,7 @@ import type { CareerItem } from "@/lib/data";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, ChevronUp, GraduationCap } from "lucide-react";
+import Link from "next/link";
 
 interface CareerTimelineProps {
   items: CareerItem[];
@@ -31,7 +32,13 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
               <CardHeader className="py-4">
                   <p className="text-sm text-muted-foreground">{item.date}</p>
                   <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
-                  <p className="font-semibold text-primary">{item.institution}</p>
+                  {item.institutionUrl ? (
+                    <Link href={item.institutionUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
+                      {item.institution}
+                    </Link>
+                  ) : (
+                    <p className="font-semibold text-primary">{item.institution}</p>
+                  )}
               </CardHeader>
               <CardContent className="py-0">
                   <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
@@ -54,7 +61,13 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                   <CardHeader className="py-4">
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
-                      <p className="font-semibold text-primary">{item.institution}</p>
+                      {item.institutionUrl ? (
+                        <Link href={item.institutionUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
+                          {item.institution}
+                        </Link>
+                      ) : (
+                        <p className="font-semibold text-primary">{item.institution}</p>
+                      )}
                   </CardHeader>
                   <CardContent className="py-0">
                       <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
@@ -79,7 +92,13 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                   <CardHeader className="py-4">
                       <p className="text-sm text-muted-foreground">{item.date}</p>
                       <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
-                      <p className="font-semibold text-primary">{item.institution}</p>
+                      {item.institutionUrl ? (
+                        <Link href={item.institutionUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
+                          {item.institution}
+                        </Link>
+                      ) : (
+                        <p className="font-semibold text-primary">{item.institution}</p>
+                      )}
                   </CardHeader>
                   <CardContent className="py-0">
                       <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />

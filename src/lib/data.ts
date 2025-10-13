@@ -27,6 +27,7 @@ export interface CareerItem {
   type: 'Education' | 'Work';
   title: string;
   institution: string;
+  institutionUrl?: string;
   date: string;
   description: string;
   tags?: string[];
@@ -143,39 +144,44 @@ export const careerPath: CareerItem[] = [
   {
     type: 'Work',
     title: '3D Tools & Pipeline Developer',
-    institution: 'Ubisoft Montpellier',
+    institution: 'TAT Studio',
+    institutionUrl: 'https://tat-prod.com/',
     date: 'Oct. 2024 - Current',
-    description: 'Working on an unannounced project.',
-    tags: ['Python', 'Maya', 'GitLab', 'In house tools and pipelines']
+    description: 'Principal developer on Lovebirds (2026), with occasional work on various projects with different pipelines:<br />- Pil\'s Adventures series (2026)<br />- Falcon Express (2025)',
+    tags: ['Python', 'Maya', 'GitLab']
   },
   {
     type: 'Work',
     title: 'Tools & Pipeline Developer - Tech Artist',
     institution: 'Wild Sheep Studio',
+    institutionUrl: 'https://www.wildsheep.studio/',
     date: 'Jan. 2021 - Nov. 2023 ',
     description: 'On "WiLD", then on an unannounced project, worked on creating and maintaining the custom tools and pipelines for terrain, level and assets creation:<br />- Game edition pipelines and tools<br />- Tools code base migration<br />- Photometry scanner (arduino, python, IoT)<br />- C++/Vulkan stamper development<br />- Jenkins builds for tools CI/CD',
-    tags: ['3DSMax', 'MAXScript', 'C++', 'C#', 'Perforce', 'GitHub', 'Jenkins', 'In house tools and pipelines']
+    tags: ['3DSMax', 'MAXScript', 'C++', 'C#', 'Perforce', 'GitHub', 'Jenkins']
   },
   {
     type: 'Work',
     title: 'Associate Technical Producer',
-    institution: ' Wild Sheep Studio ',
+    institution: 'Wild Sheep Studio',
+    institutionUrl: 'https://www.wildsheep.studio/',
     date: 'Sep. 2020 - Jan. 2021',
     description: 'On "WiLD", managed and monitored the production planning, followed the tech teams progress, managed meetings and communication, proposed different management tools',
     tags: ['Management', 'Organization', 'Multi-tasking', 'Communication', 'Atlassian suite']
   },
   {
     type: 'Work',
-    title: '3D Tools & Pipeline Developer',
-    institution: 'TAT Studio',
+    title: 'Tools & Pipeline Developer - Tech Artist',
+    institution: 'Wild Sheep Studio',
+    institutionUrl: 'https://www.wildsheep.studio/',
     date: 'Aug. 2019 - Sep. 2020',
-    description: 'Worked on the TV show "Les as de la jungle à la rescousse !".<br />Created and maintained the tools and pipeline for the production of the show.<br />- Automated rigging and animation tools<br />- Pipeline integration for different departments<br />- User support and training',
-    tags: ['Python', 'Maya', 'Shotgun', 'Redshift', 'GitLab', 'In house tools and pipelines']
+    description: 'On "WiLD", then on an unannounced project, worked on creating and maintaining the custom tools and pipelines for terrain, level and assets creation:<br />- Game edition pipelines and tools<br />- Tools code base migration<br />- Photometry scanner (arduino, python, IoT)<br />- C++/Vulkan stamper development<br />- Jenkins builds for tools CI/CD',
+    tags: ['3DSMax', 'MAXScript', 'C++', 'C#', 'Perforce', 'GitHub', 'Jenkins']
   },
   {
     type: 'Education',
     title: 'Bachelor\'s degree',
     institution: 'EPSI Montpellier',
+    institutionUrl: 'https://www.epsi.fr/',
     date: '2019 - 2020',
     description: 'Graduated from 3rd year at the ingeneering school EPSI Montpellier. I also got a bachelor\'s degree in "Conception and Developement of Applications". ',
     tags: ['C#', 'Python', 'Angular', 'Symfony', 'Powershell', 'Ethical Hacking', 'IOT', 'Database management', 'DevOps', 'Java', 'C++', 'Data Structures']
@@ -184,6 +190,7 @@ export const careerPath: CareerItem[] = [
     type: 'Education',
     title: 'BTEC Higher National Diploma',
     institution: 'ESICAD Montpellier',
+    institutionUrl: 'https://www.esicad.com/',
     date: '2017 - 2019',
     description: 'Fresh start at studies after a few years working. Obtained a 2 years diploma, graduated top of class both years.',
     tags: ['Algorithmic', 'HTML5', 'CSS3', 'PHP7', 'jQuery']
