@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Cpu, Menu, X, ArrowDownToLine } from "lucide-react";
+import { Cpu, Menu, ArrowDownToLine } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -74,16 +74,10 @@ const Header = () => {
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <div className="flex flex-col h-full">
                     <div className="flex items-center justify-between p-4 border-b">
-                    <Link href="/" className="flex items-center gap-2 font-bold font-headline text-lg">
+                    <Link href="/" className="flex items-center gap-2 font-bold font-headline text-lg" onClick={() => setMobileMenuOpen(false)}>
                         <Cpu className="text-primary h-7 w-7" />
                         Synapse
                     </Link>
-                    <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon">
-                        <X />
-                        <span className="sr-only">Close menu</span>
-                        </Button>
-                    </SheetTrigger>
                     </div>
                     <nav className="flex-grow p-4 space-y-2">
                     {navItems.map((item) => (
