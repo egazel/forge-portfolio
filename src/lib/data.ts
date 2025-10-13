@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from "./placeholder-images";
 
 export interface Project {
@@ -105,26 +106,34 @@ export const projects: Project[] = [
 
 export const references: Reference[] = [
   {
-    name: 'Jane Doe',
-    title: 'Lead Animator',
-    company: 'Pixel Perfect Studios',
-    quote: "The auto-rigging tool developed by Synapse is a masterpiece. It cut our character setup time by more than 50%, allowing our animation team to focus on what they do best: bringing characters to life. It's robust, intuitive, and has become an indispensable part of our pipeline.",
+    name: 'Loïc Hamot',
+    title: 'Senior tools programmer',
+    company: 'Wild Sheep Studio',
+    quote: "Mr. Elie Gazel [...] held the position of Tools Programmer where he developed the editors of Scene, Entities, and Terrain in the 3DStudioMax application. Within our company, Mr. Elie Gazel has acquired solid skills in programming, user interface and data manipulation but also in tasks managment and producing. He fulfilled his mission with diligence and a great concern for the user experience, despite a complex technical environment.",
     imageUrl: findImage('rec-profile-1').imageUrl,
     imageHint: findImage('rec-profile-1').imageHint,
   },
   {
-    name: 'John Smith',
-    title: 'VFX Supervisor',
-    company: 'Epic Effects',
-    quote: "Working with the procedural terrain generator was a game-changer for our open-world project. The level of detail and control it provided was astounding. We could iterate on massive landscapes in hours, not weeks. A truly powerful and well-designed tool.",
+    name: 'Teddy Delrue',
+    title: 'Senior Technical Artist',
+    company: 'Wild Sheep Studio',
+    quote: "Working with Elie played a crucial role in the set up of complex pipelines and custom tools creation, allowing for a faster assets and scenes creation in our game. In addition to being reactive and able to handle multiple tasks simultaneously, he possesses a global vision of the project and its needs, allowing him to priorize efficiently. Since we constantly share the same tools, it is obvious that Elie has a technical expertise as strong as a 3D graphist. Elie became an essential part of the studio, and working with him is a genuine pleasure. In addition to his technical skills, he is also very social and integrates perfectly in our working environment.",
     imageUrl: findImage('rec-profile-2').imageUrl,
     imageHint: findImage('rec-profile-2').imageHint,
   },
   {
-    name: 'Emily White',
-    title: 'Production Manager',
-    company: 'Creative Assembly',
-    quote: "The asset management system is the backbone of our studio. Its seamless integration with our existing software and the clarity it provides on asset status and versioning have been invaluable. It has streamlined communication between departments and eliminated countless hours of manual tracking.",
+    name: 'Ferdinand Fayollet',
+    title: 'Senior tools programmer',
+    company: 'Wild Sheep Studio',
+    quote: "Elie inherited a very large and very badly maintained code base of max script used for many internal tools for level creation, art creation, general pipeline, etc. He managed to implement well designed and robust new features, fix bugs, optimize and cleanup when necessary. He was also very careful with making sure everything was thoroughly tested. He did an amazing job at managing priorities, jumping from tasks to tasks, sometimes multiple times a day. All that while maintaining a positive and friendly attitude with everybody at the studio. I definitely recommend him for any tools or tech art job in the games industry. He acquired already far enough experience to be very versatile and adaptable in my opinion.",
+    imageUrl: findImage('rec-profile-3').imageUrl,
+    imageHint: findImage('rec-profile-3').imageHint,
+  },
+  {
+    name: 'Fabien Delpiano',
+    title: 'CEO',
+    company: 'Pastagames',
+    quote: "Elie bravely confronted MaxScript for several years, in a heroic struggle against programmatic methods from another age. Hail to him!",
     imageUrl: findImage('rec-profile-3').imageUrl,
     imageHint: findImage('rec-profile-3').imageHint,
   }
