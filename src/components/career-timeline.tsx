@@ -4,6 +4,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, ChevronUp, GraduationCap } from "lucide-react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 interface CareerTimelineProps {
   items: CareerItem[];
@@ -40,7 +41,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                     <p className="font-semibold text-primary">{item.institution}</p>
                   )}
               </CardHeader>
-              <CardContent className="py-0">
+              <CardContent className={cn("py-0", (!item.tags || item.tags.length === 0) && "pb-6")}>
                   <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
               </CardContent>
               {item.tags && item.tags.length > 0 && (
@@ -69,7 +70,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                         <p className="font-semibold text-primary">{item.institution}</p>
                       )}
                   </CardHeader>
-                  <CardContent className="py-0">
+                  <CardContent className={cn("py-0", (!item.tags || item.tags.length === 0) && "pb-6")}>
                       <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
                   </CardContent>
                   {item.tags && item.tags.length > 0 && (
@@ -100,7 +101,7 @@ const CareerTimeline = ({ items }: CareerTimelineProps) => {
                         <p className="font-semibold text-primary">{item.institution}</p>
                       )}
                   </CardHeader>
-                  <CardContent className="py-0">
+                  <CardContent className={cn("py-0", (!item.tags || item.tags.length === 0) && "pb-6")}>
                       <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: item.description }} />
                   </CardContent>
                   {item.tags && item.tags.length > 0 && (

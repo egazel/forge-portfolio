@@ -145,7 +145,7 @@ export const careerPath: CareerItem[] = [
     type: 'Work',
     title: '3D Tools & Pipeline Developer',
     institution: 'TAT Studio',
-    institutionUrl: 'https://tat-prod.com/',
+    institutionUrl: 'https://tatprod.com/',
     date: 'Oct. 2024 - Current',
     description: 'Principal developer on Lovebirds (2026), with occasional work on various projects with different pipelines:<br />- Pil\'s Adventures series (2026)<br />- Falcon Express (2025)',
     tags: ['Python', 'Maya', 'GitLab']
@@ -154,7 +154,7 @@ export const careerPath: CareerItem[] = [
     type: 'Work',
     title: 'Tools & Pipeline Developer - Tech Artist',
     institution: 'Wild Sheep Studio',
-    institutionUrl: 'https://www.wildsheep.studio/',
+    institutionUrl: 'https://wildsheepstudio.com/',
     date: 'Jan. 2021 - Nov. 2023 ',
     description: 'On "WiLD", then on an unannounced project, worked on creating and maintaining the custom tools and pipelines for terrain, level and assets creation:<br />- Game edition pipelines and tools<br />- Tools code base migration<br />- Photometry scanner (arduino, python, IoT)<br />- C++/Vulkan stamper development<br />- Jenkins builds for tools CI/CD',
     tags: ['3DSMax', 'MAXScript', 'C++', 'C#', 'Perforce', 'GitHub', 'Jenkins']
@@ -163,7 +163,7 @@ export const careerPath: CareerItem[] = [
     type: 'Work',
     title: 'Associate Technical Producer',
     institution: 'Wild Sheep Studio',
-    institutionUrl: 'https://www.wildsheep.studio/',
+    institutionUrl: 'https://wildsheepstudio.com/',
     date: 'Sep. 2020 - Jan. 2021',
     description: 'On "WiLD", managed and monitored the production planning, followed the tech teams progress, managed meetings and communication, proposed different management tools',
     tags: ['Management', 'Organization', 'Multi-tasking', 'Communication', 'Atlassian suite']
@@ -172,7 +172,7 @@ export const careerPath: CareerItem[] = [
     type: 'Work',
     title: 'Tools & Pipeline Developer - Tech Artist',
     institution: 'Wild Sheep Studio',
-    institutionUrl: 'https://www.wildsheep.studio/',
+    institutionUrl: 'https://wildsheepstudio.com/',
     date: 'Aug. 2019 - Sep. 2020',
     description: 'On "WiLD", then on an unannounced project, worked on creating and maintaining the custom tools and pipelines for terrain, level and assets creation:<br />- Game edition pipelines and tools<br />- Tools code base migration<br />- Photometry scanner (arduino, python, IoT)<br />- C++/Vulkan stamper development<br />- Jenkins builds for tools CI/CD',
     tags: ['3DSMax', 'MAXScript', 'C++', 'C#', 'Perforce', 'GitHub', 'Jenkins']
@@ -206,7 +206,7 @@ export const careerPath: CareerItem[] = [
   {
     type: 'Education',
     title: 'Highschool diploma',
-    institution: 'Lycée Auguste Renoir',
+    institution: '',
     date: '2013',
     description: 'Obtained a scientific high school diploma, with biology speciality.',
     tags: []
