@@ -24,7 +24,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="md:col-span-2 prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground text-center md:text-left">
-              <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 uppercase inline-block overflow-hidden whitespace-nowrap animate-typing">
+            <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-3 uppercase inline-block overflow-hidden whitespace-nowrap animate-typing">
                 Hello, I'm Elie Gazel<span className="text-primary animate-blink">|</span>
               </h1>
               <p>
