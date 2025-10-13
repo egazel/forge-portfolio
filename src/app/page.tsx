@@ -28,10 +28,7 @@ export default function Home() {
                 Hello, I'm Elie Gazel<span className="text-primary animate-blink">|</span>
               </h1>
               <p>
-                Hello! I'm a passionate Tools and Pipeline Developer with over a decade of experience in the trenches of the video game and 3D animation industries. My mission is to empower artists by building robust, intuitive, and efficient workflows that let creativity flourish without technical constraints.
-              </p>
-              <p>
-                I specialize in Python and have extensive experience with APIs for major DCC applications like Maya, Houdini, and Nuke. From character auto-riggers to procedural environment tools and large-scale asset management systems, I thrive on solving complex problems and building the digital infrastructure that brings incredible worlds to life.
+              I'm a french developer with 5 years of experience in the video game and animation industry, currently working as a 3D Tools and Pipeline Developer for <Link href="https://tatprod.com/">TAT Studio</Link>. 
               </p>
               <div className="flex items-center justify-center md:justify-start gap-4 mt-8 flex-wrap">
                 <Button asChild size="lg">
