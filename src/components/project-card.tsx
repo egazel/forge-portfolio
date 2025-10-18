@@ -25,7 +25,7 @@ const ProjectCard = ({ project, activeCategory }: ProjectCardProps) => {
           "bg-card",
           isActive 
             ? "opacity-100 scale-100 shadow-lg shadow-primary/20 border-primary/50" 
-            : "opacity-40 scale-95 hover:opacity-100 hover:scale-100 hover:shadow-lg hover:shadow-primary/20"
+            : "opacity-20 scale-90 hover:opacity-100 hover:scale-100 hover:shadow-lg hover:shadow-primary/20"
         )}
       >
         <Link href={`/projects/${project.slug}`}>
