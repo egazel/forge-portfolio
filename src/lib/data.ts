@@ -142,7 +142,7 @@ export const careerPath: CareerItem[] = [
     institution: 'TAT Studio',
     institutionUrl: 'https://tatprod.com/',
     date: 'Oct. 2024 - Current',
-    description: 'Principal developer on Lovebirds (2026), with occasional work on various projects with different pipelines:<br />- Pil\'s Adventures series (2026)<br />- Falcon Express (2025)',
+    description: 'As part of the maya dev team, I worked on multiple projects.<br />Feature films:<br />&nbsp;&nbsp;&nbsp;&nbsp;- Ringo at summer camp (Principal Developer, date inc.)<br />&nbsp;&nbsp;&nbsp;&nbsp;- LoveBirds (2026)<br />&nbsp;&nbsp;&nbsp;&nbsp;- Falcon Express (Jul. 2025)<br />Animated series:<br />&nbsp;&nbsp;&nbsp;&nbsp;- Pil\'s Adventures series (Nov. 2025)',
     tags: ['Python', 'Maya', 'GitLab']
   },
   {
