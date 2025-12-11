@@ -92,7 +92,7 @@ export default {
         },
         'grid': {
           '0%': { 'background-position': '0px 0px' },
-          '100%': { 'background-position': '0px 45px' },
+          '100%': { 'background-position': '0px 55px' },
         },
         'blink': {
           '0%, 100%': { opacity: '1' },
